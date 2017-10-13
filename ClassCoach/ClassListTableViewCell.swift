@@ -10,6 +10,8 @@ import UIKit
 
 class ClassListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var emojieButton: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

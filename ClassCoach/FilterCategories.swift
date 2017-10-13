@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+public enum FilterCategories {
+    case IEP, FIVEOFOUR, GATE, ELL
+    
+    public func toString(filterCategory: FilterCategories) -> String {
+        switch (filterCategory){
+        case FilterCategories.ELL : return "ELL"
+        case FilterCategories.IEP : return "IEP"
+        case FilterCategories.FIVEOFOUR : return "504"
+        case FilterCategories.GATE : return "GATE"
+        }
+    }
+}
+
+
+

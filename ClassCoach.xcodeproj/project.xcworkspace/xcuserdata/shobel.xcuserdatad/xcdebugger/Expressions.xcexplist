@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ClassListTableViewController.tableView(UITableView, commit : UITableViewCellEditingStyle, forRowAt : IndexPath) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.addStudent(AnyObject) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
+            </PersistentString>
+            <PersistentString
+               value = "classList.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.scrollViewDidScroll(UIScrollView) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollView.contentOffset.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.filter(list : [Student]) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PopUpViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:PopUpViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.editModeChanged() -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "editMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FilterTableViewController.filterELL(AnyObject) -&gt; ():FilterTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filters">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FilterTableViewController.applyButtonAction(AnyObject) -&gt; ():FilterTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tvc.classForCoder">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.removeStudent(studentToRemove : Student) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "student">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.imageUpdated(image : UIImage) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedEmojie">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.viewDidLoad() -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FilterTableViewController.cancelButtonAction(AnyObject) -&gt; ():FilterTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navigationController">
+            </PersistentString>
+            <PersistentString
+               value = "self.splitViewController?.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedEmojie">
+            </PersistentString>
+            <PersistentString
+               value = "selectedRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.cellForRow(at: indexPath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "IEPTableViewController.iepReadingAction(AnyObject) -&gt; ():IEPTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student">
+            </PersistentString>
+            <PersistentString
+               value = "sender.isOn">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.setData() -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student">
+            </PersistentString>
+            <PersistentString
+               value = "fieldFirstName">
+            </PersistentString>
+            <PersistentString
+               value = "selectorGender">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.pickerView(UIPickerView, didSelectRow : Int, inComponent : Int) -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pickerData[row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.doneEditButtonAction(AnyObject) -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navigationController.topViewController.classForCoder">
+            </PersistentString>
+            <PersistentString
+               value = "navigationController.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EmojieViewController.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():EmojieViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.presentingViewController">
+            </PersistentString>
+            <PersistentString
+               value = "delegate">
+            </PersistentString>
+            <PersistentString
+               value = "UIApplication.shared.delegate?.window?.rootViewController.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.imageTapped(tapGestureRecognizer : UITapGestureRecognizer) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "evc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.validate() -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FilterTableViewController.viewDidLoad() -&gt; ():FilterTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filters">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.tableView(UITableView, willDisplay : UITableViewCell, forRowAt : IndexPath) -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.cellForRow(at: IndexPath(row:0 section: 0))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.filter(list : [Student]) -&gt; [Student]:ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Dataholder.sharedInstance.classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedStudent">
+            </PersistentString>
+            <PersistentString
+               value = "filter">
+            </PersistentString>
+            <PersistentString
+               value = "selectedRow">
+            </PersistentString>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.setCellsEditable(editable : Bool) -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "numberOfSections(in: tableView)">
+            </PersistentString>
+            <PersistentString
+               value = "tableView.cellForRow(at: IndexPath(row: row, section: section))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.setData(student : Student) -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "fieldStudentName">
+            </PersistentString>
+            <PersistentString
+               value = "student.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.viewDidAppear(Bool) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EmojieViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:EmojieViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imagesArray.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.(filterContentForSearchText(String, scope : String) -&gt; ()).(closure #1):ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student.nameFirst.lowercased().contains(searchText.lowercased())">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.tableView(UITableView, didSelectRowAt : IndexPath) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.filterContentForSearchText(String, scope : String) -&gt; ():ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "student.nameFirst.lowercased().contains(searchText.lowercased())">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.init(coder : NSCoder) -&gt; DetailTableViewController?:DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

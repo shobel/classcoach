@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1C83304A1F5FB58900BD2648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8330491F5FB58900BD2648 /* AppDelegate.swift */; };
-		1C83304C1F5FB58900BD2648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C83304B1F5FB58900BD2648 /* ViewController.swift */; };
 		1C83304F1F5FB58900BD2648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C83304D1F5FB58900BD2648 /* Main.storyboard */; };
 		1C8330511F5FB58900BD2648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8330501F5FB58900BD2648 /* Assets.xcassets */; };
 		1C8330541F5FB58900BD2648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8330521F5FB58900BD2648 /* LaunchScreen.storyboard */; };
 		1C83305F1F5FB58900BD2648 /* ClassCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C83305E1F5FB58900BD2648 /* ClassCoachTests.swift */; };
 		1C83306A1F5FB58900BD2648 /* ClassCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8330691F5FB58900BD2648 /* ClassCoachUITests.swift */; };
+		1C83307B1F5FE02F00BD2648 /* ClassListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C83307A1F5FE02F00BD2648 /* ClassListTableViewController.swift */; };
+		1C83307D1F5FEA2800BD2648 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C83307C1F5FEA2800BD2648 /* FilterTableViewController.swift */; };
+		1C83307F1F60E22B00BD2648 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C83307E1F60E22B00BD2648 /* DetailTableViewController.swift */; };
+		1CD0F4731F61203900ACFECB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4721F61203900ACFECB /* Student.swift */; };
+		1CD0F4C31F65CC4B00ACFECB /* ClassListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4C21F65CC4B00ACFECB /* ClassListTableViewCell.swift */; };
+		1CD0F4CB1F73013900ACFECB /* PopupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4CA1F73013900ACFECB /* PopupCollectionViewCell.swift */; };
+		1CD0F4D11F73473000ACFECB /* EmojieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4D01F73473000ACFECB /* EmojieViewController.swift */; };
+		1CD0F4D31F8ABD0600ACFECB /* IEPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4D21F8ABD0600ACFECB /* IEPTableViewController.swift */; };
+		1CD0F4D91F8C57D100ACFECB /* FilterCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4D81F8C57D000ACFECB /* FilterCategories.swift */; };
+		1CD0F4DB1F8C5C5E00ACFECB /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0F4DA1F8C5C5E00ACFECB /* DataHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		1C8330461F5FB58900BD2648 /* ClassCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8330491F5FB58900BD2648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C83304B1F5FB58900BD2648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C83304E1F5FB58900BD2648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C8330501F5FB58900BD2648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C8330531F5FB58900BD2648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		1C8330651F5FB58900BD2648 /* ClassCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8330691F5FB58900BD2648 /* ClassCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCoachUITests.swift; sourceTree = "<group>"; };
 		1C83306B1F5FB58900BD2648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C83307A1F5FE02F00BD2648 /* ClassListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassListTableViewController.swift; sourceTree = "<group>"; };
+		1C83307C1F5FEA2800BD2648 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
+		1C83307E1F60E22B00BD2648 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		1CD0F4721F61203900ACFECB /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		1CD0F4C21F65CC4B00ACFECB /* ClassListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassListTableViewCell.swift; sourceTree = "<group>"; };
+		1CD0F4CA1F73013900ACFECB /* PopupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CD0F4D01F73473000ACFECB /* EmojieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojieViewController.swift; sourceTree = "<group>"; };
+		1CD0F4D21F8ABD0600ACFECB /* IEPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEPTableViewController.swift; sourceTree = "<group>"; };
+		1CD0F4D81F8C57D000ACFECB /* FilterCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCategories.swift; sourceTree = "<group>"; };
+		1CD0F4DA1F8C5C5E00ACFECB /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +115,10 @@
 		1C8330481F5FB58900BD2648 /* ClassCoach */ = {
 			isa = PBXGroup;
 			children = (
+				1CD0F4C41F65CC7A00ACFECB /* Model */,
+				1CD0F4C51F65CC8D00ACFECB /* Views */,
+				1C8330791F5FCB0D00BD2648 /* Controllers */,
 				1C8330491F5FB58900BD2648 /* AppDelegate.swift */,
-				1C83304B1F5FB58900BD2648 /* ViewController.swift */,
 				1C83304D1F5FB58900BD2648 /* Main.storyboard */,
 				1C8330501F5FB58900BD2648 /* Assets.xcassets */,
 				1C8330521F5FB58900BD2648 /* LaunchScreen.storyboard */,
@@ -123,6 +143,37 @@
 				1C83306B1F5FB58900BD2648 /* Info.plist */,
 			);
 			path = ClassCoachUITests;
+			sourceTree = "<group>";
+		};
+		1C8330791F5FCB0D00BD2648 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C83307A1F5FE02F00BD2648 /* ClassListTableViewController.swift */,
+				1CD0F4D21F8ABD0600ACFECB /* IEPTableViewController.swift */,
+				1C83307C1F5FEA2800BD2648 /* FilterTableViewController.swift */,
+				1C83307E1F60E22B00BD2648 /* DetailTableViewController.swift */,
+				1CD0F4D01F73473000ACFECB /* EmojieViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1CD0F4C41F65CC7A00ACFECB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CD0F4721F61203900ACFECB /* Student.swift */,
+				1CD0F4D81F8C57D000ACFECB /* FilterCategories.swift */,
+				1CD0F4DA1F8C5C5E00ACFECB /* DataHolder.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1CD0F4C51F65CC8D00ACFECB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CD0F4C21F65CC4B00ACFECB /* ClassListTableViewCell.swift */,
+				1CD0F4CA1F73013900ACFECB /* PopupCollectionViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +313,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C83304C1F5FB58900BD2648 /* ViewController.swift in Sources */,
+				1C83307F1F60E22B00BD2648 /* DetailTableViewController.swift in Sources */,
+				1CD0F4D11F73473000ACFECB /* EmojieViewController.swift in Sources */,
+				1C83307B1F5FE02F00BD2648 /* ClassListTableViewController.swift in Sources */,
+				1CD0F4D31F8ABD0600ACFECB /* IEPTableViewController.swift in Sources */,
+				1CD0F4CB1F73013900ACFECB /* PopupCollectionViewCell.swift in Sources */,
 				1C83304A1F5FB58900BD2648 /* AppDelegate.swift in Sources */,
+				1CD0F4DB1F8C5C5E00ACFECB /* DataHolder.swift in Sources */,
+				1CD0F4731F61203900ACFECB /* Student.swift in Sources */,
+				1CD0F4C31F65CC4B00ACFECB /* ClassListTableViewCell.swift in Sources */,
+				1CD0F4D91F8C57D100ACFECB /* FilterCategories.swift in Sources */,
+				1C83307D1F5FEA2800BD2648 /* FilterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +574,7 @@
 				1C8330701F5FB58900BD2648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C8330711F5FB58900BD2648 /* Build configuration list for PBXNativeTarget "ClassCoachTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +583,7 @@
 				1C8330731F5FB58900BD2648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C8330741F5FB58900BD2648 /* Build configuration list for PBXNativeTarget "ClassCoachUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +592,7 @@
 				1C8330761F5FB58900BD2648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

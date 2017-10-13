@@ -16,6 +16,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let svc = self.window?.rootViewController as? UISplitViewController {
+            svc.preferredDisplayMode = .automatic
+            if let nc = svc.viewControllers.last as? UINavigationController {
+                nc.topViewController?.navigationItem.leftBarButtonItem = svc.displayModeButtonItem
+            }
+        }
+        
+        let mySpecialBlue = UIColor(red: 73/255, green: 157/255, blue: 178/255, alpha: 1)
+        let mySpecialBlueDarker = UIColor(red: 66/255, green: 153/255, blue: 175/255, alpha: 1)
+        UINavigationBar.appearance().barTintColor = mySpecialBlue
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().backgroundColor = mySpecialBlue
+//        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().clipsToBounds = true
+        
+        UISearchBar.appearance().barTintColor = mySpecialBlueDarker
+        UISearchBar.appearance().tintColor = .white
+        
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = mySpecialBlue
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        statusBar.backgroundColor = mySpecialBlue
+
         return true
     }
 
@@ -40,7 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

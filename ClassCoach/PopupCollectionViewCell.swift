@@ -10,4 +10,6 @@ import UIKit
 
 class PopupCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var imageView: UIImageView!
+
 }
