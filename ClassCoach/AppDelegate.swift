@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let mySpecialBlue = UIColor(red: 73/255, green: 157/255, blue: 178/255, alpha: 1)
-        let mySpecialBlueDarker = UIColor(red: 66/255, green: 153/255, blue: 175/255, alpha: 1)
+        //let mySpecialBlueDarker = UIColor(red: 66/255, green: 153/255, blue: 175/255, alpha: 1)
         UINavigationBar.appearance().barTintColor = mySpecialBlue
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
@@ -35,14 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().clipsToBounds = true
         
-        UISearchBar.appearance().barTintColor = mySpecialBlueDarker
+        UISearchBar.appearance().barTintColor = mySpecialBlue
         UISearchBar.appearance().tintColor = .white
         
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = mySpecialBlue
+        UILabel.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).textColor = UIColor.white
         
         UIApplication.shared.statusBarStyle = .lightContent
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         statusBar.backgroundColor = mySpecialBlue
+        
+        UITableViewCell.appearance().backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
 
         return true
     }

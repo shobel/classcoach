@@ -40,7 +40,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         tableView.tableHeaderView = searchController.searchBar
         
         //background image
-        let tempImageView = UIImageView(image: UIImage(named: "chalkboard.jpg"))
+        let tempImageView = UIImageView(image: UIImage(named: "purple_poly.jpg"))
         tempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = tempImageView;
         self.tableView.separatorStyle = .none;
@@ -165,7 +165,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentCell", for: indexPath) as! ClassListTableViewCell
         cell.textLabel!.text = " \(student.nameLast), \(student.nameFirst)"
         cell.textLabel!.textColor = UIColor.white
-        cell.contentView.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 0.2)
+        cell.contentView.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 0.4)
         cell.backgroundColor = UIColor.clear
         cell.imageView?.tag = indexPath.row
         

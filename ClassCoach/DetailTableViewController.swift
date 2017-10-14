@@ -8,7 +8,21 @@
 
 import UIKit
 
-class DetailTableViewController: UITableViewController, UITextViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
+extension DetailTableViewController {
+    func hideKeyboard(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(DetailTableViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard(){
+        view.endEditing(true)
+    }
+}
+
+class DetailTableViewController: UITableViewController, UITextViewDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
     
     //need these to dynamic manipulate size of 504 cell
     let rowHeight504 = 150
@@ -54,7 +68,18 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UIPi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboard()
+        fieldLastName.delegate = self
+        fieldFirstName.delegate = self
         textView504.delegate = self
+        
+        //background image
+        let tempImageView = UIImageView(image: UIImage(named: "poly.jpg"))
+        tempImageView.frame = self.tableView.frame
+        self.tableView.backgroundView = tempImageView;
+        
+        pickerRW.showsSelectionIndicator = false
         
         initTextView504()
         initPicker()
@@ -304,6 +329,11 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UIPi
     
     @IBAction func changedParentIsDivorced(_ sender: AnyObject) {
         student.parentDivorced = switchDivorced.isOn
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
 }

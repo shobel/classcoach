@@ -12,6 +12,11 @@ class FilterTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //background image
+        let tempImageView = UIImageView(image: UIImage(named: "school.jpg"))
+        tempImageView.frame = self.tableView.frame
+        self.tableView.backgroundView = tempImageView;
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
