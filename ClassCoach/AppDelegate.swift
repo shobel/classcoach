@@ -39,13 +39,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UISearchBar.appearance().tintColor = .white
         
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = mySpecialBlue
-        UILabel.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).textColor = UIColor.white
         
         UIApplication.shared.statusBarStyle = .lightContent
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         statusBar.backgroundColor = mySpecialBlue
         
-        UITableViewCell.appearance().backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
+        //UITableViewCell.appearance().backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
+        UILabel.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).textColor = UIColor.black
 
         return true
     }
