@@ -19,6 +19,13 @@ class IEPTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //background image
+        let tempImageView = UIImageView(image: UIImage(named: "nature3.png"))
+        tempImageView.frame = self.tableView.frame
+        self.tableView.backgroundView = tempImageView;
+        self.tableView.separatorStyle = .none;
+        
         setData()
     }
     
@@ -30,6 +37,14 @@ class IEPTableViewController: UITableViewController {
             speechSwitch.isOn = student.iepSpeech
             otSwitch.isOn = student.iepOT
         }
+    }
+    
+    @IBAction func infoButtonAction(_ sender: Any) {
+        let alertController = UIAlertController(title: "IEP", message: "Individualized Education Program: Defines the objectives of a child who has a learning disability in one or more areas, as defined by federal regulations. It is intended to help children reach educational goals", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            alertController.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     public func setCurrentStudent(currentStudent : Student){

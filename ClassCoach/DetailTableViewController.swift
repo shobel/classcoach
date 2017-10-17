@@ -8,19 +8,19 @@
 
 import UIKit
 
-extension DetailTableViewController {
-    func hideKeyboard(){
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(DetailTableViewController.dismissKeyboard))
-        
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard(){
-        view.endEditing(true)
-    }
-}
+//extension DetailTableViewController {
+//    func hideKeyboard(){
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+//            target: self,
+//            action: #selector(DetailTableViewController.dismissKeyboard))
+//
+//        view.addGestureRecognizer(tap)
+//    }
+//
+//    @objc func dismissKeyboard(){
+//        view.endEditing(true)
+//    }
+//}
 
 class DetailTableViewController: UITableViewController, UITextViewDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
     
@@ -55,6 +55,11 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     @IBOutlet weak var switchDifficult: UISwitch!
     @IBOutlet weak var switchHelpful: UISwitch!
     @IBOutlet weak var switchDivorced: UISwitch!
+
+    @IBOutlet weak var cellIEP: UITableViewCell!
+    @IBOutlet weak var cell504: UITableViewCell!
+    @IBOutlet weak var cellGATE: UITableViewCell!
+    @IBOutlet weak var cellELL: UITableViewCell!
     
     //after clicking Done, editMode becomes false and all fields are locked
     public var editMode:Bool = true {
@@ -69,13 +74,13 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.hideKeyboard()
+        //self.hideKeyboard()
         fieldLastName.delegate = self
         fieldFirstName.delegate = self
         textView504.delegate = self
         
         //background image
-        let tempImageView = UIImageView(image: UIImage(named: "poly.jpg"))
+        let tempImageView = UIImageView(image: UIImage(named: "yellow_gradient.jpg"))
         tempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = tempImageView;
         
@@ -90,18 +95,23 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         super.viewWillDisappear(animated)
         
         if self.isMovingFromParentViewController {
-            validate()
+            if validate() {
+                    DataHolder.sharedInstance.saveData()
+            }
         }
     }
     
-    private func validate(){
+    private func validate() -> Bool{
         changedFirstName()
         changedLastName()
         if (student.nameFirst == "" || student.nameLast == ""){
             DataHolder.sharedInstance.removeStudentFromClassList(student: student)
+            return false
         } else if adding {
             DataHolder.sharedInstance.classList.append(self.student)
+            return true
         }
+        return true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -158,11 +168,66 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         switchDivorced.isOn = student.parentDivorced
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if (editMode){
+            (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.white
+            (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.darkGray
+        } else {
+            (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.darkGray
+            (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.white
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    
+    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        var title = ""
+        var message = ""
+        switch (indexPath.row){
+        case 1:
+            title = "504"
+            message = "For students with disabilities who do not require specialized instruction but need to recieve accomodations or services to ensure academic success"
+        case 2:
+            title = "GATE"
+            message = "Gifted and Talented Education: Program designed to address the learning styles of the students who have been identified as gifted and talented"
+        case 3:
+            title = "ELL"
+            message = "English Language Learner: Student who is unable to communicate fluently or learn effectively in English. Often comes from a non-English-speaking home and typically requires specialized instruction"
+        default:
+            title = "Info"
+            message = "Special Education Plan"
+        }
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            alertController.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (!editMode) {
+            cell.accessoryType = UITableViewCellAccessoryType.none
+        } else {
+            if (cell == cellIEP) {
+                cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+            } else if (cell == cell504 || cell == cellGATE || cell == cellELL) {
+                cell.accessoryType = UITableViewCellAccessoryType.detailButton
+            }
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         if indexPath == cellIndexPath504 && switch504.isOn {
             return CGFloat(rowHeight504)
         }
         return tableView.rowHeight
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        view.endEditing(true)
     }
 
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -177,6 +242,7 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
             button?.title = "Edit"
         }
         setCellsEditable(editable: editMode)
+        tableView.reloadData()
     }
     
     @IBAction func doneEditButtonAction(_ sender: AnyObject) {
@@ -329,11 +395,6 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     
     @IBAction func changedParentIsDivorced(_ sender: AnyObject) {
         student.parentDivorced = switchDivorced.isOn
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
     }
     
 }

@@ -10,11 +10,45 @@ import Foundation
 
 class DataHolder {
     
-    static let sharedInstance = DataHolder()
-    public var classList = [Student]()
-    public var filters = [FilterCategories:Bool]()
+    var filePath: String {
+        //1 - manager lets you examine contents of a files and folders in your app; creates a directory to where we are saving it
+        let manager = FileManager.default
+        //2 - this returns an array of urls from our documentDirectory and we take the first path
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
+        print("this is the url path in the documentDirectory \(String(describing: url))")
+        //3 - creates a new path component and creates a new file called "Data" which is where we will store our Data array.
+        return (url!.appendingPathComponent("Data").path)
+    }
     
-    private init() {}
+    static let sharedInstance = DataHolder()
+    public var classList : [Student]!
+    public var filters = [FilterCategories:Bool]()
+        
+    private init() {
+        loadData()
+        //UserDefaults.standard.removeObject(forKey: "classlist")
+//        if let classListRaw = UserDefaults.standard.data(forKey: "classlist") {
+//            if let unarchivedClassList = NSKeyedUnarchiver.unarchiveObject(with: classListRaw) as? [Student] {
+//                classList = unarchivedClassList
+//            }
+//        }
+    }
+    
+    public func saveData(){
+        NSKeyedArchiver.archiveRootObject(classList, toFile: filePath)
+    }
+    
+    public func loadData(){
+        if let classData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Student] {
+            if (validate(classList: classData)){
+                classList = classData
+            } else {
+                classList = [Student]()
+            }
+        } else {
+            classList = [Student]()
+        }
+    }
     
     public func removeStudentFromClassList(student : Student){
         for i in 0 ..< classList.count {
@@ -23,6 +57,16 @@ class DataHolder {
                 break;
             }
         }
+        saveData()
+    }
+    
+    private func validate(classList : [Student]) -> Bool{
+        for student in classList {
+            if !student.isValid(student: student) {
+                return false
+            }
+        }
+        return true
     }
     
 }

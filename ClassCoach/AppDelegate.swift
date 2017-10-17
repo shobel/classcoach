@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let mySpecialBlueDarker = UIColor(red: 66/255, green: 153/255, blue: 175/255, alpha: 1)
         UINavigationBar.appearance().barTintColor = mySpecialBlue
         UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
         UINavigationBar.appearance().shadowImage = UIImage()
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         statusBar.backgroundColor = mySpecialBlue
         
-        //UITableViewCell.appearance().backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
+        UITableViewCell.appearance().backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
         UILabel.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).textColor = UIColor.black
 
         return true
@@ -70,6 +70,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+//        let userDefaults = UserDefaults.standard
+//        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: DataHolder.sharedInstance.classList[0])
+//        userDefaults.set(encodedData, forKey: "classlist")
+//        userDefaults.synchronize()
     }
 
 }

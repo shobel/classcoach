@@ -47,10 +47,10 @@
          contextName = "PopUpViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:PopUpViewController.swift">
       </ContextState>
       <ContextState
-         contextName = "DetailTableViewController.editModeChanged() -&gt; ():DetailTableViewController.swift">
+         contextName = "closure #1 in ClassListTableViewController.viewDidAppear(_:):ClassListTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "editMode">
+               value = "classList">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -59,6 +59,22 @@
          <PersistentStrings>
             <PersistentString
                value = "filters">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.editModeChanged() -&gt; ():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "editMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataHolder.loadData():DataHolder.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filePath">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -123,6 +139,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ClassListTableViewController.tableView(_:cellForRowAt:):ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.viewDidAppear(_:):ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "DetailTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:DetailTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -160,6 +192,26 @@
          <PersistentStrings>
             <PersistentString
                value = "pickerData[row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Student.init(coder:):Student.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UserDefaults.standard.data">
+            </PersistentString>
+            <PersistentString
+               value = "levelRW">
+            </PersistentString>
+            <PersistentString
+               value = "nameFirst">
+            </PersistentString>
+            <PersistentString
+               value = "behavior">
+            </PersistentString>
+            <PersistentString
+               value = "x">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -296,6 +348,61 @@
          <PersistentStrings>
             <PersistentString
                value = "student.nameFirst.lowercased().contains(searchText.lowercased())">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Student.encode(with:):Student.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nameLast">
+            </PersistentString>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
+            </PersistentString>
+            <PersistentString
+               value = "levels.low.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.applicationWillTerminate(_:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataHolder.saveData():DataHolder.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "filePath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Student.init():Student.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "encodedArrays">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.tableView(_:accessoryButtonTappedForRowWith:):DetailTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.editModeChanged():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cellIEP">
+            </PersistentString>
+            <PersistentString
+               value = "UITableViewCellAccessoryType.none">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -40,7 +40,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         tableView.tableHeaderView = searchController.searchBar
         
         //background image
-        let tempImageView = UIImageView(image: UIImage(named: "purple_poly.jpg"))
+        let tempImageView = UIImageView(image: UIImage(named: "main_background.jpg"))
         tempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = tempImageView;
         self.tableView.separatorStyle = .none;
@@ -48,6 +48,13 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     }
     
     override func viewDidAppear(_ animated: Bool){
+        DataHolder.sharedInstance.classList.sort {
+            if $0.nameLast != $1.nameLast {
+                return $0.nameLast < $1.nameLast
+            } else {
+                return $0.nameFirst < $1.nameFirst
+            }
+        }
         if (!isAFilterActive()){
             classList = DataHolder.sharedInstance.classList
         }
@@ -117,7 +124,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
             let controller = segue.destination as! DetailTableViewController
-                controller.setCurrentStudent(currentStudent: selectedStudent)
+            controller.setCurrentStudent(currentStudent: selectedStudent)
             if selectedRow == -1 {
                 controller.editMode = true
                 controller.adding = true
@@ -163,7 +170,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         let student = classList[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentCell", for: indexPath) as! ClassListTableViewCell
-        cell.textLabel!.text = " \(student.nameLast), \(student.nameFirst)"
+        cell.textLabel!.text = " \(student.nameLast!), \(student.nameFirst!)"
         cell.textLabel!.textColor = UIColor.white
         cell.contentView.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 0.4)
         cell.backgroundColor = UIColor.clear
@@ -197,7 +204,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         DataHolder.sharedInstance.removeStudentFromClassList(student: student)
     }
     
-    public func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
+    @objc public func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         _ = tapGestureRecognizer.view as! UIImageView
         
         selectedRow = (tapGestureRecognizer.view?.tag)!
@@ -208,6 +215,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         selectedEmojie = UIImage(named: "emojie_\(imageIndex+1).png")!
         classList[selectedRow].emojieIconIndex = imageIndex
         tableView.reloadData()
+        DataHolder.sharedInstance.saveData()
     }
     
     @IBAction func filterButtonAction(_ sender: AnyObject) {
