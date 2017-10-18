@@ -8,21 +8,7 @@
 
 import UIKit
 
-//extension DetailTableViewController {
-//    func hideKeyboard(){
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-//            target: self,
-//            action: #selector(DetailTableViewController.dismissKeyboard))
-//
-//        view.addGestureRecognizer(tap)
-//    }
-//
-//    @objc func dismissKeyboard(){
-//        view.endEditing(true)
-//    }
-//}
-
-class DetailTableViewController: UITableViewController, UITextViewDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
+class DetailTableViewController: UITableViewController, UITextViewDelegate, UITextFieldDelegate {
     
     //need these to dynamic manipulate size of 504 cell
     let rowHeight504 = 150
@@ -43,9 +29,9 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     
     //skills
     @IBOutlet weak var selectorReading: UISegmentedControl!
-    @IBOutlet weak var pickerRW: UIPickerView!
     @IBOutlet weak var selectorMath: UISegmentedControl!
     @IBOutlet weak var selectorWriting: UISegmentedControl!
+    @IBOutlet weak var fieldRW: UITextField!
     
     //traits
     @IBOutlet weak var selectorBehavior: UISegmentedControl!
@@ -68,8 +54,8 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         }
     }
     public var adding:Bool = false
+    public var shouldCheckDups = false
     public var student = Student()
-    var pickerData: [String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,16 +64,18 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         fieldLastName.delegate = self
         fieldFirstName.delegate = self
         textView504.delegate = self
+        fieldRW.delegate = self
         
         //background image
         let tempImageView = UIImageView(image: UIImage(named: "yellow_gradient.jpg"))
         tempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = tempImageView;
         
-        pickerRW.showsSelectionIndicator = false
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+//        view.addGestureRecognizer(tap)
+//        view.isUserInteractionEnabled = true
         
         initTextView504()
-        initPicker()
         setData()
     }
     
@@ -96,7 +84,12 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         
         if self.isMovingFromParentViewController {
             if validate() {
-                    DataHolder.sharedInstance.saveData()
+                if adding {
+                    DataHolder.sharedInstance.classList.append(self.student)
+                }
+                //DataHolder.sharedInstance.saveData()
+            } else {
+                DataHolder.sharedInstance.removeStudentFromClassList(student: student)
             }
         }
     }
@@ -105,13 +98,12 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         changedFirstName()
         changedLastName()
         if (student.nameFirst == "" || student.nameLast == ""){
-            DataHolder.sharedInstance.removeStudentFromClassList(student: student)
             return false
-        } else if adding {
-            DataHolder.sharedInstance.classList.append(self.student)
+        } else if adding && checkIfStudentExists(){
+            return false
+        } else {
             return true
         }
-        return true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -134,15 +126,6 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         textView504.layer.borderColor = UIColor.lightGray.cgColor
     }
     
-    private func initPicker(){
-        pickerRW.delegate = self
-        pickerRW.dataSource = self
-        
-        for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters {
-            pickerData.append(String(char))
-        }
-    }
-    
     private func setData(){
         fieldFirstName.text = student.nameFirst
         fieldLastName.text = student.nameLast
@@ -160,7 +143,7 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         selectorReading.selectedSegmentIndex = Student.levelsArray.index(of: student.levelReading)!
         selectorWriting.selectedSegmentIndex = Student.levelsArray.index(of: student.levelWriting)!
         selectorMath.selectedSegmentIndex = Student.levelsArray.index(of: student.levelMath)!
-        pickerRW.selectRow(pickerData.index(of: student.levelRW)!, inComponent: 0, animated: false)
+        fieldRW.text = student.levelRW // do picker
         selectorBehavior.selectedSegmentIndex = Student.levelsArray.index(of: student.behavior)!
         selectorIndependence.selectedSegmentIndex = Student.levelsArray.index(of: student.independence)!
         switchDifficult.isOn = student.parentDifficult
@@ -208,7 +191,9 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        var selectorColor = DataHolder.sharedInstance.themeColor
         if (!editMode) {
+            selectorColor = UIColor.darkGray
             cell.accessoryType = UITableViewCellAccessoryType.none
         } else {
             if (cell == cellIEP) {
@@ -217,6 +202,12 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
                 cell.accessoryType = UITableViewCellAccessoryType.detailButton
             }
         }
+        selectorGender?.tintColor = selectorColor
+        selectorReading?.tintColor = selectorColor
+        selectorWriting?.tintColor = selectorColor
+        selectorMath?.tintColor = selectorColor
+        selectorBehavior?.tintColor = selectorColor
+        selectorIndependence?.tintColor = selectorColor
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
@@ -238,8 +229,10 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         let button = self.navigationItem.rightBarButtonItem
         if editMode {
             button?.title = "Done"
+            //navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Helvetica", size: 18.0)!], for: UIControlState.normal)
         } else {
             button?.title = "Edit"
+            //navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Helvetica", size: 22.0)!], for: UIControlState.normal)
         }
         setCellsEditable(editable: editMode)
         tableView.reloadData()
@@ -255,12 +248,27 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
             delay = -1
             alertController.message = "\nEnter a first and last name\n\n"
         } else if !editMode {
-            delay = 0
-            alertController.message = "\n\nStudent Saved\n\n\n"
+            if (adding || shouldCheckDups) && checkIfStudentExists() {
+                editMode = !editMode
+                delay = -1
+                alertController.message = "\nStudent with this name already exists\n\n"
+            } else {
+                delay = 0
+                alertController.message = "\n\nStudent Saved\n\n\n"
+            }
         } else {
             alertController.message = "\n\nInfo Editable\n\n\n"
         }
         presentAndDismissAlert(alertController: alertController, delay: delay)
+    }
+    
+    private func checkIfStudentExists() -> Bool{
+        for savedStudent in DataHolder.sharedInstance.classList {
+            if savedStudent.nameFirst == student.nameFirst && savedStudent.nameLast == student.nameLast {
+                return true
+            }
+        }
+        return false
     }
     
     private func presentAndDismissAlert(alertController : UIAlertController, delay : Int){
@@ -317,28 +325,28 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
-    }
-    
     @IBAction func changedFirstName(_ sender: AnyObject) {
-        changedFirstName()
+        if (student.nameFirst != fieldFirstName.text) {
+            changedFirstName()
+        }
     }
 
     @IBAction func changedLastName(_ sender: AnyObject) {
-        changedLastName()
+        if (student.nameLast != fieldLastName.text?.trimmingCharacters(in: .whitespaces)) {
+            changedLastName()
+        }
     }
     
     private func changedFirstName(){
-        student.nameFirst = fieldFirstName.text!.capitalized
+        fieldFirstName.text = fieldFirstName.text?.trimmingCharacters(in: .whitespaces).capitalized
+        student.nameFirst = fieldFirstName.text
+        shouldCheckDups = true
     }
     
     private func changedLastName(){
-        student.nameLast = fieldLastName.text!.capitalized
+        fieldLastName.text = fieldLastName.text?.trimmingCharacters(in: .whitespaces).capitalized
+        student.nameLast = fieldLastName.text
+        shouldCheckDups = true
     }
     
     @IBAction func changedGender(_ sender: AnyObject) {
@@ -365,12 +373,12 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         student.levelReading = Student.levelsArray[selectorReading.selectedSegmentIndex]
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        student.levelRW = pickerData[row]
-    }
-    
     @IBAction func changedMathLevel(_ sender: AnyObject) {
         student.levelMath = Student.levelsArray[selectorMath.selectedSegmentIndex]
+    }
+    
+    @IBAction func changedRW(_ sender: Any) {
+        student.levelRW = fieldRW.text?.trimmingCharacters(in: .whitespaces).capitalized
     }
     
     @IBAction func changedWritingLevel(_ sender: AnyObject) {
@@ -395,6 +403,25 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     
     @IBAction func changedParentIsDivorced(_ sender: AnyObject) {
         student.parentDivorced = switchDivorced.isOn
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        if (!editMode) {
+           let alertController = UIAlertController(title: "", message: "Data is protected.\nDo you want to edit?\n", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+                self.doneEditButtonAction(self)
+                alertController.dismiss(animated: true, completion: nil)
+            }))
+            alertController.addAction(UIAlertAction(title: "No", style: .default, handler: { (action: UIAlertAction!) in
+                alertController.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
 }

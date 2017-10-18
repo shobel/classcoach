@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class DataHolder {
     
@@ -21,8 +22,13 @@ class DataHolder {
     }
     
     static let sharedInstance = DataHolder()
-    public var classList : [Student]!
+    public var classList : [Student]! {
+        didSet {
+            saveData()
+        }
+    }
     public var filters = [FilterCategories:Bool]()
+    public var themeColor = UIColor(red: 39/255, green: 121/255, blue: 138/255, alpha: 1)
         
     private init() {
         loadData()
@@ -57,7 +63,7 @@ class DataHolder {
                 break;
             }
         }
-        saveData()
+        //saveData()
     }
     
     private func validate(classList : [Student]) -> Bool{

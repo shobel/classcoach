@@ -131,10 +131,10 @@
          contextName = "ClassListTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ClassListTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "selectedEmojie">
+               value = "selectedRow">
             </PersistentString>
             <PersistentString
-               value = "selectedRow">
+               value = "selectedEmojie">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -142,7 +142,7 @@
          contextName = "ClassListTableViewController.tableView(_:cellForRowAt:):ClassListTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "classList">
+               value = "isFiltering">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

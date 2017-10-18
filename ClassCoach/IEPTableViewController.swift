@@ -21,7 +21,7 @@ class IEPTableViewController: UITableViewController {
         super.viewDidLoad()
         
         //background image
-        let tempImageView = UIImageView(image: UIImage(named: "nature3.png"))
+        let tempImageView = UIImageView(image: UIImage(named: "purple_poly.png"))
         tempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = tempImageView;
         self.tableView.separatorStyle = .none;

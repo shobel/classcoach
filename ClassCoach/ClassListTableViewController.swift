@@ -14,7 +14,7 @@ extension ClassListTableViewController: UISearchResultsUpdating {
     }
 }
 
-class ClassListTableViewController: UITableViewController, EmojieViewControllerDelegate {
+class ClassListTableViewController: UITableViewController, EmojieViewControllerDelegate, UISearchBarDelegate {
 
     public var classList = [Student]()
     
@@ -23,6 +23,8 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     public var selectedEmojie = UIImage(named: "emojie_1.png")
     private var evc : EmojieViewController!
     let searchController = UISearchController(searchResultsController: nil)
+    private var filterCancelled = false
+    @IBOutlet weak var deleteAllView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +35,12 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         // Setup the Search Controller
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
+       
         searchController.searchBar.layer.borderWidth = 1
-        searchController.searchBar.layer.borderColor = UIColor(red: 73/255, green: 157/255, blue: 178/255, alpha: 1).cgColor
-        
+        searchController.searchBar.layer.borderColor = DataHolder.sharedInstance.themeColor.cgColor
+        searchController.searchBar.delegate = self;
         definesPresentationContext = true
+        
         tableView.tableHeaderView = searchController.searchBar
         
         //background image
@@ -45,6 +49,10 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         self.tableView.backgroundView = tempImageView;
         self.tableView.separatorStyle = .none;
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(deleteAll))
+        deleteAllView.addGestureRecognizer(tap)
+        
+        //self.navigationController?.navigationBar.isTranslucent = false
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -58,7 +66,16 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         if (!isAFilterActive()){
             classList = DataHolder.sharedInstance.classList
         }
+        hideShowDeleteAllButton()
         tableView.reloadData()
+    }
+    
+    private func hideShowDeleteAllButton(){
+        if classList.count > 1 {
+            deleteAllView.isHidden = false
+        } else {
+            deleteAllView.isHidden = true
+        }
     }
     
     private func filter(list: [Student]){
@@ -120,7 +137,6 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         return false
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
             let controller = segue.destination as! DetailTableViewController
@@ -155,6 +171,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
             let student = classList[indexPath.row]
             removeStudent(student: student, index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            hideShowDeleteAllButton()
         }
     }
 
@@ -182,6 +199,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         emojieButton?.addGestureRecognizer(tapGestureRecognizer)
+        
         
         return cell
     }
@@ -214,8 +232,8 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     func imageUpdated(imageIndex : Int) {
         selectedEmojie = UIImage(named: "emojie_\(imageIndex+1).png")!
         classList[selectedRow].emojieIconIndex = imageIndex
-        tableView.reloadData()
         DataHolder.sharedInstance.saveData()
+        tableView.reloadData()
     }
     
     @IBAction func filterButtonAction(_ sender: AnyObject) {
@@ -243,7 +261,31 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
             }
             return false
         })
-        
+        if filterCancelled {
+            filterCancelled = false
+            hideShowDeleteAllButton()
+        } else {
+            deleteAllView.isHidden = true
+        }
         tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        filterCancelled = true
+    }
+    
+    @objc private func deleteAll() {
+        let alertController = UIAlertController(title: "", message: "Delete entire class list?", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "No", style: .default, handler: { (action: UIAlertAction!) in
+            alertController.dismiss(animated: true, completion: nil)
+        }))
+        alertController.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+            DataHolder.sharedInstance.classList.removeAll()
+            self.classList = DataHolder.sharedInstance.classList
+            self.tableView.reloadData()
+            alertController.dismiss(animated: true, completion: nil)
+            self.hideShowDeleteAllButton()
+        }))
+        self.present(alertController, animated: true, completion: nil)
     }
 }
