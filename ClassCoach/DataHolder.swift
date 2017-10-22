@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+extension FileManager {
+    func addSkipBackupAttributeToItemAtURL(url:NSURL) throws {
+        try url.setResourceValue(true, forKey: URLResourceKey.isExcludedFromBackupKey)
+    }
+}
+
 class DataHolder {
     
     var filePath: String {
@@ -31,6 +37,11 @@ class DataHolder {
     public var themeColor = UIColor(red: 39/255, green: 121/255, blue: 138/255, alpha: 1)
         
     private init() {
+        do {
+            try FileManager.default.addSkipBackupAttributeToItemAtURL(url: NSURL(string: filePath)!)
+        } catch {
+            print("Error: \(error)")
+        }
         loadData()
         //UserDefaults.standard.removeObject(forKey: "classlist")
 //        if let classListRaw = UserDefaults.standard.data(forKey: "classlist") {

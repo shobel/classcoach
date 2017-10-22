@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 extension ClassListTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
@@ -53,7 +54,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         deleteAllView.addGestureRecognizer(tap)
         
         //self.navigationController?.navigationBar.isTranslucent = false
-        UserDefaults.standard.removeObject(forKey: "launchedBefore")
+        //UserDefaults.standard.removeObject(forKey: "launchedBefore")
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if !launchedBefore {
             showPrivacyAlert()
@@ -300,7 +301,13 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     }
     
     private func showPrivacyAlert(){
-        let alertController = UIAlertController(title: "Data Privacy Notice", message: "Currently, this app does not encrypt your data. It is recommended that you do not save personally identifiable information (i.e. full legal names) in conjunction with sensitive data.", preferredStyle: .alert)
+        var message = "Currently, this app does not encrypt your data. It is recommended that you do not save personally identifiable information (i.e. full names) in conjunction with sensitive data"
+        if !(LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)) {
+            message.append(", and that your device be password protected.")
+        } else {
+            message.append(".")
+        }
+        let alertController = UIAlertController(title: "Data Privacy Notice", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             alertController.dismiss(animated: true, completion: nil)
         }))
