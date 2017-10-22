@@ -86,18 +86,22 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
                     case FilterCategories.ELL :
                         if (student.hasELL) {
                             classList.append(student)
+                            break
                         }
                     case FilterCategories.FIVEOFOUR :
                         if (student.has504){
                             classList.append(student)
+                            break
                         }
                     case FilterCategories.GATE :
                         if (student.hasGATE){
                             classList.append(student)
+                            break
                         }
                     case FilterCategories.IEP :
                         if (student.hasIEP()){
                             classList.append(student)
+                            break
                         }
                     }
                 }
