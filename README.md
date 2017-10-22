@@ -18,7 +18,7 @@ Information Security, Collection, Use, and Sharing </br>
 <ul>
   <li>No personally identifiable information, or information of ANY kind, about the users of this app is collected or transmitted.</li> 
   <li>The app only has access to the information that users voluntarily input. Data is not sold, rented or shared with any party in any form.</li>
-  <li>Inputted data is encrypted on the user's local device, can be deleted at any time by the user within the app, and is deleted when the app is uninstalled.
+  <li>Inputted data is AES encrypted on the user's local device, can be deleted at any time by the user within the app, and is deleted when the app is uninstalled.
   <li>Data saved by this app will not be automatically backed up to the iCloud</li>
   <li>This policy will not change without notice</li>
 </ul>
