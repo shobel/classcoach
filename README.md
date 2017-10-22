@@ -15,7 +15,7 @@ Keeps track of your students' educational plans, academic skills, behavior, and 
 This privacy notice discloses the privacy practices for the Class Coach app.
 
 Information Collection, Use, and Sharing </br>
-<ul><li>No personally idenifiable information, or information of ANY kind, about the users of this app is collected or transmitted.</li> 
+<ul><li>No personally identifiable information, or information of ANY kind, about the users of this app is collected or transmitted.</li> 
 <li>The app only has access to the information that users voluntarily input. Data is not sold, rented or shared with any party in any form at any time.</li>
 <li>Data resides locally on the user's device and can be deleted at any time by the user within the app, as well as when the app is deleted/uninstalled from the user's device.
   <li>This policy will NOT change without notice</li>
