@@ -52,19 +52,47 @@ class DataHolder {
     }
     
     public func saveData(){
-        NSKeyedArchiver.archiveRootObject(classList, toFile: filePath)
+        //NSKeyedArchiver.archiveRootObject(classList, toFile: filePath)
+        let archivedData = NSKeyedArchiver.archivedData(withRootObject: classList)
+        let encryptedData = RNCryptor.encrypt(data: archivedData, withPassword: "password")
+        NSKeyedArchiver.archiveRootObject(encryptedData, toFile: filePath)
     }
     
     public func loadData(){
+        //if there is data saved in old plain text format, load it and then encrypt it
+        //Otherwise, try to load the encrypted data
         if let classData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Student] {
             if (validate(classList: classData)){
                 classList = classData
+                saveData()
+            }
+        } else {
+            if let encryptedArchive = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? Data {
+                do {
+                    let decryptedArchive = try RNCryptor.decrypt(data: encryptedArchive, withPassword: "password")
+                    let classData = NSKeyedUnarchiver.unarchiveObject(with: decryptedArchive) as! [Student]
+                    if (validate(classList: classData)){
+                        classList = classData
+                    } else {
+                        classList = [Student]()
+                    }
+                } catch {
+                    print(error)
+                }
             } else {
                 classList = [Student]()
             }
-        } else {
-            classList = [Student]()
         }
+        
+//        if let classData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Student] {
+//            if (validate(classList: classData)){
+//                classList = classData
+//            } else {
+//                classList = [Student]()
+//            }
+//        } else {
+//            classList = [Student]()
+//        }
     }
     
     public func removeStudentFromClassList(student : Student){

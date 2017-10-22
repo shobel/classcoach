@@ -301,9 +301,9 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     }
     
     private func showPrivacyAlert(){
-        var message = "Currently, this app does not encrypt your data. It is recommended that you do not save personally identifiable information (i.e. full names) in conjunction with sensitive data"
+        var message = "This app securely encrypts entered data and never shares or trasmits data to any external sources. However, it is still recommended that you do not use this app to save personally identifiable information in conjunction with sensitive data without proper approval"
         if !(LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)) {
-            message.append(", and that your device be password protected.")
+            message.append(", and that password protection is enabled for this device.")
         } else {
             message.append(".")
         }
