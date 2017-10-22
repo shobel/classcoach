@@ -53,6 +53,12 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         deleteAllView.addGestureRecognizer(tap)
         
         //self.navigationController?.navigationBar.isTranslucent = false
+        UserDefaults.standard.removeObject(forKey: "launchedBefore")
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if !launchedBefore {
+            showPrivacyAlert()
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        }
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -289,6 +295,14 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
             self.tableView.reloadData()
             alertController.dismiss(animated: true, completion: nil)
             self.hideShowDeleteAllButton()
+        }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    private func showPrivacyAlert(){
+        let alertController = UIAlertController(title: "Data Privacy Notice", message: "Currently, this app does not encrypt your data. It is recommended that you do not save personally identifiable information (i.e. full legal names) in conjunction with sensitive data.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            alertController.dismiss(animated: true, completion: nil)
         }))
         self.present(alertController, animated: true, completion: nil)
     }
