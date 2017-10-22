@@ -14,7 +14,7 @@ Keeps track of your students' educational plans, academic skills, behavior, and 
 # Data Privacy and Security Notice
 This privacy notice discloses the privacy practices for the Class Coach app.
 
-Information Collection, Use, and Sharing </br>
+Information Security, Collection, Use, and Sharing </br>
 <ul>
   <li>No personally identifiable information, or information of ANY kind, about the users of this app is collected or transmitted.</li> 
   <li>The app only has access to the information that users voluntarily input. Data is not sold, rented or shared with any party in any form.</li>
