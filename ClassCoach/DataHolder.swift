@@ -26,7 +26,7 @@ class DataHolder {
         //3 - creates a new path component and creates a new file called "Data" which is where we will store our Data array.
         return (url!.appendingPathComponent("Data").path)
     }
-    
+    let keycode = "password"
     static let sharedInstance = DataHolder()
     public var classList : [Student]! {
         didSet {
@@ -54,7 +54,7 @@ class DataHolder {
     public func saveData(){
         //NSKeyedArchiver.archiveRootObject(classList, toFile: filePath)
         let archivedData = NSKeyedArchiver.archivedData(withRootObject: classList)
-        let encryptedData = RNCryptor.encrypt(data: archivedData, withPassword: "password")
+        let encryptedData = RNCryptor.encrypt(data: archivedData, withPassword: keycode)
         NSKeyedArchiver.archiveRootObject(encryptedData, toFile: filePath)
     }
     
@@ -69,7 +69,7 @@ class DataHolder {
         } else {
             if let encryptedArchive = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? Data {
                 do {
-                    let decryptedArchive = try RNCryptor.decrypt(data: encryptedArchive, withPassword: "password")
+                    let decryptedArchive = try RNCryptor.decrypt(data: encryptedArchive, withPassword: keycode)
                     let classData = NSKeyedUnarchiver.unarchiveObject(with: decryptedArchive) as! [Student]
                     if (validate(classList: classData)){
                         classList = classData
