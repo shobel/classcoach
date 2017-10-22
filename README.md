@@ -9,4 +9,17 @@ Keeps track of your students' educational plans, academic skills, behavior, and 
 ![](https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/89/b3/10/89b310d0-83fc-c65a-6d3f-fb41375baf5c/pr_source.jpg/300x300bb.jpg?1508528439457)
 ![](https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/68/d7/99/68d799bb-6f46-f4c0-ddac-bd27f838ca2a/pr_source.jpg/300x300bb.jpg?1508528439453)
 ![](https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/7a/94/3f/7a943fec-91a7-92be-edce-e8ec70c145d0/pr_source.jpg/300x300bb.jpg?1508528439455)
+</br>
+
+# Privacy Notice
+This privacy notice discloses the privacy practices for the Class Coach app.
+
+Information Collection, Use, and Sharing </br>
+<ul><li>No personally idenifiable information about the users/usage of the app is collected or transmitted.</li> 
+<li>The app only has access to the information that users voluntarily input into the app. Data is not sold, rented or shared with any party in any form.</li>
+<li>Data resides locally on the user's device and can be deleted at any time by the user.
+</ul>
+
+
+
 
