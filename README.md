@@ -14,13 +14,13 @@ Keeps track of your students' educational plans, academic skills, behavior, and 
 # Data Privacy and Security Notice
 This privacy notice discloses the privacy practices for the Class Coach app.
 
-Information Collection, Use, and Sharing </br>
+Information Security, Collection, Use, and Sharing </br>
 <ul>
   <li>No personally identifiable information, or information of ANY kind, about the users of this app is collected or transmitted.</li> 
-  <li>The app only has access to the information that users voluntarily input. Data is not sold, rented or shared with any party in any form at any time.</li>
-  <li>Data is not encrypted but resides solely on the user's local device and can be deleted at any time by the user within the app, as well as when the app is deleted/uninstalled from the user's device.
+  <li>The app only has access to the information that users voluntarily input. Data is not sold, rented or shared with any party in any form.</li>
+  <li>Inputted data is AES encrypted on the user's local device, can be deleted at any time by the user within the app, and is deleted when the app is uninstalled.
   <li>Data saved by this app will not be automatically backed up to the iCloud</li>
-  <li>This policy will NOT change without notice</li>
+  <li>This policy will not change without notice</li>
 </ul>
 
 
