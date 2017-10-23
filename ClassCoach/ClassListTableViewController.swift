@@ -87,30 +87,38 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     
     private func filter(list: [Student]){
         for student in DataHolder.sharedInstance.classList {
+            var studentAdded = false
             for filterCategory in DataHolder.sharedInstance.filters {
                 if (DataHolder.sharedInstance.filters[filterCategory.key])!{
                     switch (filterCategory.key){
                     case FilterCategories.ELL :
                         if (student.hasELL) {
                             classList.append(student)
+                            studentAdded = true
                             break
                         }
                     case FilterCategories.FIVEOFOUR :
                         if (student.has504){
                             classList.append(student)
+                            studentAdded = true
                             break
                         }
                     case FilterCategories.GATE :
                         if (student.hasGATE){
                             classList.append(student)
+                            studentAdded = true
                             break
                         }
                     case FilterCategories.IEP :
                         if (student.hasIEP()){
                             classList.append(student)
+                            studentAdded = true
                             break
                         }
                     }
+                }
+                if studentAdded {
+                    break
                 }
             }
         }
