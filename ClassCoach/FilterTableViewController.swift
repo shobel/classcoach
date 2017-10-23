@@ -10,6 +10,9 @@ import UIKit
 
 class FilterTableViewController: UITableViewController {
     
+    @IBOutlet weak var filterReading: UISegmentedControl!
+    @IBOutlet weak var filterWriting: UISegmentedControl!
+    @IBOutlet weak var filterMath: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,10 +25,6 @@ class FilterTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
     }
 
     @IBAction func applyButtonAction(_ sender: AnyObject) {
@@ -61,6 +60,45 @@ class FilterTableViewController: UITableViewController {
     
     @IBAction func filterIEP(_ sender: AnyObject) {
         DataHolder.sharedInstance.filters[FilterCategories.IEP] = sender.isOn
+    }
+    
+    @IBAction func filterReading(_ sender: Any) {
+        DataHolder.sharedInstance.filters[FilterCategories.READING_HIGH] = false
+        DataHolder.sharedInstance.filters[FilterCategories.READING_MIDDLE] = false
+        DataHolder.sharedInstance.filters[FilterCategories.READING_LOW] = false
+        if (sender as! UISegmentedControl).selectedSegmentIndex == 0 {
+            DataHolder.sharedInstance.filters[FilterCategories.READING_HIGH] = true
+        } else if (sender as! UISegmentedControl).selectedSegmentIndex == 1 {
+            DataHolder.sharedInstance.filters[FilterCategories.READING_MIDDLE] = true
+        } else if (sender as! UISegmentedControl).selectedSegmentIndex == 2 {
+            DataHolder.sharedInstance.filters[FilterCategories.READING_LOW] = true
+        }
+    }
+    
+    @IBAction func filterWriting(_ sender: Any) {
+        DataHolder.sharedInstance.filters[FilterCategories.WRITING_HIGH] = false
+        DataHolder.sharedInstance.filters[FilterCategories.WRITING_MIDDLE] = false
+        DataHolder.sharedInstance.filters[FilterCategories.WRITING_LOW] = false
+        if (sender as! UISegmentedControl).selectedSegmentIndex == 0 {
+            DataHolder.sharedInstance.filters[FilterCategories.WRITING_HIGH] = true
+        } else if (sender as! UISegmentedControl).selectedSegmentIndex == 1 {
+            DataHolder.sharedInstance.filters[FilterCategories.WRITING_MIDDLE] = true
+        } else if (sender as! UISegmentedControl).selectedSegmentIndex == 2 {
+            DataHolder.sharedInstance.filters[FilterCategories.WRITING_LOW] = true
+        }
+    }
+    
+    @IBAction func filterMath(_ sender: Any) {
+        DataHolder.sharedInstance.filters[FilterCategories.MATH_HIGH] = false
+        DataHolder.sharedInstance.filters[FilterCategories.MATH_MIDDLE] = false
+        DataHolder.sharedInstance.filters[FilterCategories.MATH_LOW] = false
+        if (sender as! UISegmentedControl).selectedSegmentIndex == 0 {
+            DataHolder.sharedInstance.filters[FilterCategories.MATH_HIGH] = true
+        } else if (sender as! UISegmentedControl).selectedSegmentIndex == 1 {
+            DataHolder.sharedInstance.filters[FilterCategories.MATH_MIDDLE] = true
+        } else if (sender as! UISegmentedControl).selectedSegmentIndex == 2 {
+            DataHolder.sharedInstance.filters[FilterCategories.MATH_LOW] = true
+        }
     }
 
 }

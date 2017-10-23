@@ -39,13 +39,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 1.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8K-hB-OHf">
+                                <rect key="frame" x="144" y="402" width="87" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="00R-St-pFB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.57060977879458952" green="0.75339497365007146" blue="0.79080310880829019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="X8K-hB-OHf" firstAttribute="top" secondItem="oOL-09-4KF" secondAttribute="bottom" constant="-4" id="CHx-HP-ACe"/>
                             <constraint firstItem="oOL-09-4KF" firstAttribute="centerX" secondItem="JBj-xR-Mjs" secondAttribute="centerX" id="D0m-Nt-bMa"/>
                             <constraint firstItem="JBj-xR-Mjs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="160" id="LjZ-Xb-zGX"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="oOL-09-4KF" secondAttribute="bottom" constant="261" id="b53-Tb-6F9"/>
                             <constraint firstItem="JBj-xR-Mjs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bTR-16-M3C"/>
+                            <constraint firstItem="X8K-hB-OHf" firstAttribute="centerX" secondItem="oOL-09-4KF" secondAttribute="centerX" id="eZ8-U5-Dt9"/>
                             <constraint firstItem="JBj-xR-Mjs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="73" id="k6J-mz-yIy"/>
                             <constraint firstItem="oOL-09-4KF" firstAttribute="top" secondItem="JBj-xR-Mjs" secondAttribute="bottom" constant="8" symbolic="YES" id="ucF-yp-RPr"/>
                         </constraints>

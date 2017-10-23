@@ -87,37 +87,66 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     
     private func filter(list: [Student]){
         for student in DataHolder.sharedInstance.classList {
-            var studentAdded = false
+            var addStudent = false
             for filterCategory in DataHolder.sharedInstance.filters {
                 if (DataHolder.sharedInstance.filters[filterCategory.key])!{
                     switch (filterCategory.key){
                     case FilterCategories.ELL :
                         if (student.hasELL) {
-                            classList.append(student)
-                            studentAdded = true
-                            break
+                            addStudent = true
                         }
                     case FilterCategories.FIVEOFOUR :
                         if (student.has504){
-                            classList.append(student)
-                            studentAdded = true
-                            break
+                            addStudent = true
                         }
                     case FilterCategories.GATE :
                         if (student.hasGATE){
-                            classList.append(student)
-                            studentAdded = true
-                            break
+                            addStudent = true
                         }
                     case FilterCategories.IEP :
                         if (student.hasIEP()){
-                            classList.append(student)
-                            studentAdded = true
-                            break
+                            addStudent = true
+                        }
+                    case .READING_HIGH:
+                        if (student.levelReading == Student.levels.high) {
+                            addStudent = true
+                        }
+                    case .MATH_HIGH:
+                        if (student.levelMath == Student.levels.high) {
+                            addStudent = true
+                        }
+                    case .WRITING_HIGH:
+                        if (student.levelWriting == Student.levels.high) {
+                            addStudent = true
+                        }
+                    case .READING_MIDDLE:
+                        if (student.levelReading == Student.levels.medium) {
+                            addStudent = true
+                        }
+                    case .READING_LOW:
+                        if (student.levelReading == Student.levels.low) {
+                            addStudent = true
+                        }
+                    case .MATH_MIDDLE:
+                        if (student.levelMath == Student.levels.medium) {
+                            addStudent = true
+                        }
+                    case .MATH_LOW:
+                        if (student.levelMath == Student.levels.low) {
+                            addStudent = true
+                        }
+                    case .WRITING_MIDDLE:
+                        if (student.levelWriting == Student.levels.medium) {
+                            addStudent = true
+                        }
+                    case .WRITING_LOW:
+                        if (student.levelWriting == Student.levels.low) {
+                            addStudent = true
                         }
                     }
                 }
-                if studentAdded {
+                if addStudent {
+                    classList.append(student)
                     break
                 }
             }
@@ -131,12 +160,12 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         }
         self.navigationItem.leftBarButtonItem?.title = "Clear Filter"
         self.navigationItem.rightBarButtonItem?.isEnabled = false
-        self.title = ""
-        for filterCategory in DataHolder.sharedInstance.filters {
-            if (DataHolder.sharedInstance.filters[filterCategory.key])!{
-                self.title?.append(filterCategory.key.toString(filterCategory: filterCategory.key) + " ")
-            }
-        }
+        self.title = "Filtered List"
+//        for filterCategory in DataHolder.sharedInstance.filters {
+//            if (DataHolder.sharedInstance.filters[filterCategory.key])!{
+//                self.title?.append(filterCategory.key.toString(filterCategory: filterCategory.key) + " ")
+//            }
+//        }
     }
     
     public func doNormalLayout(){
@@ -261,6 +290,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         } else {
             DataHolder.sharedInstance.filters.removeAll()
             classList = DataHolder.sharedInstance.classList
+            hideShowDeleteAllButton()
             doNormalLayout()
             tableView.reloadData()
         }

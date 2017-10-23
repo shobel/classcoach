@@ -41,7 +41,7 @@ public class Student : NSObject, NSCoding {
     
     //var favorite = false
     
-    public static var levelsArray = [levels.low, levels.medium, levels.high]
+    public static var levelsArray = [levels.high, levels.medium, levels.low]
     public static var genderArray = [genders.male, genders.female]
     
     
@@ -172,7 +172,7 @@ public class Student : NSObject, NSCoding {
         }
         return services
     }
-    
+        
     public func hasIEP() -> Bool {
         if (iepReading || iepWriting || iepMath || iepSpeech || iepOT){
             return true

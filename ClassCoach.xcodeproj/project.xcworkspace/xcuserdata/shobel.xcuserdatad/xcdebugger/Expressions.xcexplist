@@ -44,6 +44,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ClassListTableViewController.filter(list:):ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PopUpViewController.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:PopUpViewController.swift">
       </ContextState>
       <ContextState
@@ -51,6 +59,9 @@
          <PersistentStrings>
             <PersistentString
                value = "classList">
+            </PersistentString>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -83,6 +94,20 @@
          <PersistentStrings>
             <PersistentString
                value = "tvc.classForCoder">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.setData():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student">
+            </PersistentString>
+            <PersistentString
+               value = "student.levelReading">
+            </PersistentString>
+            <PersistentString
+               value = "Student.levelsArray">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -131,10 +156,10 @@
          contextName = "ClassListTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:ClassListTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "selectedRow">
+               value = "selectedEmojie">
             </PersistentString>
             <PersistentString
-               value = "selectedEmojie">
+               value = "selectedRow">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -152,6 +177,9 @@
             <PersistentString
                value = "classList">
             </PersistentString>
+            <PersistentString
+               value = "DataHolder.sharedInstance.classList">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
@@ -159,6 +187,14 @@
          <PersistentStrings>
             <PersistentString
                value = "tableView.cellForRow(at: indexPath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ClassListTableViewController.prepare(for:sender:):ClassListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedStudent">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -411,6 +447,20 @@
          <PersistentStrings>
             <PersistentString
                value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FilterTableViewController.filterReading(_:):FilterTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FilterSegmentedControl.touchesBegan(_:with:):FilterSegmentedControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "oldValue">
+            </PersistentString>
+            <PersistentString
+               value = "selectedSegmentIndex">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

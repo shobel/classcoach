@@ -1062,6 +1062,108 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xCr-sB-9Fx">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xCr-sB-9Fx" id="EvD-r0-j4r">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPQ-iz-2aY">
+                                                    <rect key="frame" x="23" y="11.5" width="62.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Ak8-ei-Bnu" customClass="FilterSegmentedControl" customModule="ClassCoach" customModuleProvider="target">
+                                                    <rect key="frame" x="188" y="8" width="167" height="29"/>
+                                                    <segments>
+                                                        <segment title="High"/>
+                                                        <segment title="Middle"/>
+                                                        <segment title="Low"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="filterReading:" destination="Nm9-p8-RPg" eventType="valueChanged" id="SkX-YQ-Fdh"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yPQ-iz-2aY" firstAttribute="centerY" secondItem="EvD-r0-j4r" secondAttribute="centerY" id="1Kc-Bk-afF"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yPQ-iz-2aY" secondAttribute="trailingMargin" id="UJL-Ql-xTb"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ak8-ei-Bnu" secondAttribute="trailing" constant="20" id="afV-uG-GJ3"/>
+                                                <constraint firstItem="yPQ-iz-2aY" firstAttribute="leading" secondItem="EvD-r0-j4r" secondAttribute="leadingMargin" constant="15" id="gcW-iJ-zLk"/>
+                                                <constraint firstItem="Ak8-ei-Bnu" firstAttribute="centerY" secondItem="EvD-r0-j4r" secondAttribute="centerY" id="xVC-uw-TXg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IN0-Sb-8xo">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IN0-Sb-8xo" id="Fb4-O3-mgc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHJ-8o-P61">
+                                                    <rect key="frame" x="23" y="11.5" width="55" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-fa-pm0" customClass="FilterSegmentedControl" customModule="ClassCoach" customModuleProvider="target">
+                                                    <rect key="frame" x="188" y="7" width="167" height="29"/>
+                                                    <segments>
+                                                        <segment title="High"/>
+                                                        <segment title="Middle"/>
+                                                        <segment title="Low"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="filterWriting:" destination="Nm9-p8-RPg" eventType="valueChanged" id="ZWr-Oz-rs3"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zHJ-8o-P61" secondAttribute="trailingMargin" id="72U-p0-Anh"/>
+                                                <constraint firstItem="zHJ-8o-P61" firstAttribute="leading" secondItem="Fb4-O3-mgc" secondAttribute="leadingMargin" constant="15" id="C6M-2a-Gi8"/>
+                                                <constraint firstItem="gC2-fa-pm0" firstAttribute="centerY" secondItem="Fb4-O3-mgc" secondAttribute="centerY" id="hWr-zz-hFy"/>
+                                                <constraint firstItem="zHJ-8o-P61" firstAttribute="centerY" secondItem="Fb4-O3-mgc" secondAttribute="centerY" id="uDJ-Dz-SIR"/>
+                                                <constraint firstAttribute="trailing" secondItem="gC2-fa-pm0" secondAttribute="trailing" constant="20" id="wPZ-fe-9kh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dmr-bR-Ha8">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dmr-bR-Ha8" id="1u8-U2-0CI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qD-tl-L9b">
+                                                    <rect key="frame" x="23" y="11.5" width="39" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-ol-khM" customClass="FilterSegmentedControl" customModule="ClassCoach" customModuleProvider="target">
+                                                    <rect key="frame" x="188" y="7" width="167" height="29"/>
+                                                    <segments>
+                                                        <segment title="High"/>
+                                                        <segment title="Middle"/>
+                                                        <segment title="Low"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="filterMath:" destination="Nm9-p8-RPg" eventType="valueChanged" id="rj9-Wa-que"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ttm-ol-khM" firstAttribute="centerY" secondItem="1u8-U2-0CI" secondAttribute="centerY" id="M7h-M7-KTf"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ttm-ol-khM" secondAttribute="trailing" constant="20" id="Yld-qa-NTq"/>
+                                                <constraint firstItem="3qD-tl-L9b" firstAttribute="centerY" secondItem="1u8-U2-0CI" secondAttribute="centerY" id="dy3-fx-amL"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3qD-tl-L9b" secondAttribute="trailingMargin" id="rsA-n4-Ern"/>
+                                                <constraint firstItem="3qD-tl-L9b" firstAttribute="leading" secondItem="1u8-U2-0CI" secondAttribute="leadingMargin" constant="15" id="tFG-zg-1qU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1084,6 +1186,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="filterMath" destination="Ttm-ol-khM" id="w37-KN-tmW"/>
+                        <outlet property="filterReading" destination="Ak8-ei-Bnu" id="U9d-kf-Rkk"/>
+                        <outlet property="filterWriting" destination="gC2-fa-pm0" id="wve-eo-q3g"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5AG-m7-Xsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
