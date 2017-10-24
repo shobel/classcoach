@@ -22,6 +22,10 @@ class FilterTableViewController: UITableViewController {
         self.tableView.backgroundView = tempImageView;
         self.tableView.separatorStyle = .none;
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DataHolder.sharedInstance.filterMode = 0
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -101,4 +105,7 @@ class FilterTableViewController: UITableViewController {
         }
     }
 
+    @IBAction func filterModeChanged(_ sender: Any) {
+        DataHolder.sharedInstance.filterMode = (sender as! UISegmentedControl).selectedSegmentIndex
+    }
 }

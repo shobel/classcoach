@@ -34,6 +34,7 @@ class DataHolder {
         }
     }
     public var filters = [FilterCategories:Bool]()
+    public var filterMode = 0 //OR 1 - AND
     public var themeColor = UIColor(red: 39/255, green: 121/255, blue: 138/255, alpha: 1)
         
     private init() {

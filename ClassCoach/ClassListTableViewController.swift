@@ -88,67 +88,110 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     private func filter(list: [Student]){
         for student in DataHolder.sharedInstance.classList {
             var addStudent = false
+            var meetsAllCriteria = true
             for filterCategory in DataHolder.sharedInstance.filters {
                 if (DataHolder.sharedInstance.filters[filterCategory.key])!{
                     switch (filterCategory.key){
                     case FilterCategories.ELL :
                         if (student.hasELL) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case FilterCategories.FIVEOFOUR :
                         if (student.has504){
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case FilterCategories.GATE :
                         if (student.hasGATE){
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case FilterCategories.IEP :
                         if (student.hasIEP()){
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .READING_HIGH:
                         if (student.levelReading == Student.levels.high) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .MATH_HIGH:
                         if (student.levelMath == Student.levels.high) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .WRITING_HIGH:
                         if (student.levelWriting == Student.levels.high) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .READING_MIDDLE:
                         if (student.levelReading == Student.levels.medium) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .READING_LOW:
                         if (student.levelReading == Student.levels.low) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .MATH_MIDDLE:
                         if (student.levelMath == Student.levels.medium) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .MATH_LOW:
                         if (student.levelMath == Student.levels.low) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .WRITING_MIDDLE:
                         if (student.levelWriting == Student.levels.medium) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     case .WRITING_LOW:
                         if (student.levelWriting == Student.levels.low) {
                             addStudent = true
+                        } else {
+                            meetsAllCriteria = false
+                            break
                         }
                     }
                 }
-                if addStudent {
+                if DataHolder.sharedInstance.filterMode == 0 && addStudent {
                     classList.append(student)
                     break
                 }
+            }
+            if DataHolder.sharedInstance.filterMode == 1 && meetsAllCriteria {
+                classList.append(student)
             }
         }
     }
