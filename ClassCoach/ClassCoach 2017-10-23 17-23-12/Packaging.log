@@ -1,0 +1,854 @@
+2017-10-24 00:22:44 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7ffa589ac690; archive(resolved)='<IDEArchive: 0x7ffa57ea15a0>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team(resolved)='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7ffa589ac690; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionProcessingPipelineContext: 0x7ffa589a79d0; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa5b0f2970; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa589d98d0; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa529123e0; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa589ab1e0; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa589e9490; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa589d90a0; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa5b621f10; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='<IDEProvisioningBasicTeam 0x7ffa589be170: teamID: BDZT3U3R7D, teamName: Sam Hobel>'>
+	<IDEDistributionContext: 0x7ffa7423ca30; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7ffa5b007cd0>', team='(null)'>
+	<IDEDistributionContext: 0x7ffa5c205f50; archive = '<IDEArchive: 0x7ffa57ea15a0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7ffa589ac690>
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionCreateDestRootStep
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionCopyItemStep
+2017-10-24 00:22:44 +0000  Running /usr/bin/ditto '-V' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app'
+2017-10-24 00:22:44 +0000  >>> Copying /Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app 
+2017-10-24 00:22:44 +0000  copying file ./_CodeSignature/CodeResources ... 
+2017-10-24 00:22:44 +0000  17709 bytes for ./_CodeSignature/CodeResources
+2017-10-24 00:22:44 +0000  copying file ./AppIcon20x20@2x.png ... 
+2017-10-24 00:22:44 +0000  3255 bytes for ./AppIcon20x20@2x.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon20x20@2x~ipad.png ... 
+2017-10-24 00:22:44 +0000  3255 bytes for ./AppIcon20x20@2x~ipad.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon20x20@3x.png ... 
+2017-10-24 00:22:44 +0000  5494 bytes for ./AppIcon20x20@3x.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon20x20~ipad.png ... 
+2017-10-24 00:22:44 +0000  1286 bytes for ./AppIcon20x20~ipad.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon29x29@2x.png ... 
+2017-10-24 00:22:44 +0000  5240 bytes for ./AppIcon29x29@2x.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon29x29@2x~ipad.png ... 
+2017-10-24 00:22:44 +0000  5240 bytes for ./AppIcon29x29@2x~ipad.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon29x29@3x.png ... 
+2017-10-24 00:22:44 +0000  9008 bytes for ./AppIcon29x29@3x.png
+copying file ./AppIcon29x29~ipad.png ... 
+2017-10-24 00:22:44 +0000  2133 bytes for ./AppIcon29x29~ipad.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon40x40@2x.png ... 
+2017-10-24 00:22:44 +0000  8188 bytes for ./AppIcon40x40@2x.png
+copying file ./AppIcon40x40@2x~ipad.png ... 
+2017-10-24 00:22:44 +0000  8188 bytes for ./AppIcon40x40@2x~ipad.png
+copying file ./AppIcon40x40@3x.png ... 
+2017-10-24 00:22:44 +0000  13952 bytes for ./AppIcon40x40@3x.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon40x40~ipad.png ... 
+2017-10-24 00:22:44 +0000  3255 bytes for ./AppIcon40x40~ipad.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon60x60@2x.png ... 
+2017-10-24 00:22:44 +0000  13952 bytes for ./AppIcon60x60@2x.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon60x60@3x.png ... 
+2017-10-24 00:22:44 +0000  27320 bytes for ./AppIcon60x60@3x.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2017-10-24 00:22:44 +0000  20279 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./AppIcon76x76~ipad.png ... 
+2017-10-24 00:22:44 +0000  7836 bytes for ./AppIcon76x76~ipad.png
+2017-10-24 00:22:44 +0000  copying file ./AppIcon83.5x83.5@2x~ipad.png ... 
+2017-10-24 00:22:44 +0000  24289 bytes for ./AppIcon83.5x83.5@2x~ipad.png
+copying file ./archived-expanded-entitlements.xcent ... 
+2017-10-24 00:22:44 +0000  372 bytes for ./archived-expanded-entitlements.xcent
+copying file ./Assets.car ... 
+2017-10-24 00:22:44 +0000  1302440 bytes for ./Assets.car
+2017-10-24 00:22:44 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+4016 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Base.lproj/Main.storyboardc/ClassListNav.nib ... 
+3409 bytes for ./Base.lproj/Main.storyboardc/ClassListNav.nib
+copying file ./Base.lproj/Main.storyboardc/classListVC.nib ... 
+2809 bytes for ./Base.lproj/Main.storyboardc/classListVC.nib
+copying file ./Base.lproj/Main.storyboardc/emojieVC.nib ... 
+1085 bytes for ./Base.lproj/Main.storyboardc/emojieVC.nib
+copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+483 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+copying file ./Base.lproj/Main.storyboardc/JhP-aF-WAA-view-aK2-4u-JYM.nib ... 
+2017-10-24 00:22:44 +0000  24674 bytes for ./Base.lproj/Main.storyboardc/JhP-aF-WAA-view-aK2-4u-JYM.nib
+copying file ./Base.lproj/Main.storyboardc/Mih-Gs-MJ9-view-4Am-Iw-7av.nib ... 
+2017-10-24 00:22:44 +0000  5807 bytes for ./Base.lproj/Main.storyboardc/Mih-Gs-MJ9-view-4Am-Iw-7av.nib
+copying file ./Base.lproj/Main.storyboardc/Nm9-p8-RPg-view-C7W-mc-H5U.nib ... 
+2017-10-24 00:22:44 +0000  13533 bytes for ./Base.lproj/Main.storyboardc/Nm9-p8-RPg-view-C7W-mc-H5U.nib
+2017-10-24 00:22:44 +0000  copying file ./Base.lproj/Main.storyboardc/qnY-Sg-qe5-view-r2i-dP-pIb.nib ... 
+2017-10-24 00:22:44 +0000  6380 bytes for ./Base.lproj/Main.storyboardc/qnY-Sg-qe5-view-r2i-dP-pIb.nib
+copying file ./Base.lproj/Main.storyboardc/UITableViewController-JhP-aF-WAA.nib ... 
+2017-10-24 00:22:44 +0000  1952 bytes for ./Base.lproj/Main.storyboardc/UITableViewController-JhP-aF-WAA.nib
+2017-10-24 00:22:44 +0000  copying file ./Base.lproj/Main.storyboardc/UITableViewController-Nm9-p8-RPg.nib ... 
+2017-10-24 00:22:44 +0000  1820 bytes for ./Base.lproj/Main.storyboardc/UITableViewController-Nm9-p8-RPg.nib
+2017-10-24 00:22:44 +0000  copying file ./Base.lproj/Main.storyboardc/UITableViewController-zRy-hv-2dY.nib ... 
+2017-10-24 00:22:44 +0000  1824 bytes for ./Base.lproj/Main.storyboardc/UITableViewController-zRy-hv-2dY.nib
+2017-10-24 00:22:44 +0000  copying file ./Base.lproj/Main.storyboardc/zRy-hv-2dY-view-bTf-XJ-GaZ.nib ... 
+2017-10-24 00:22:44 +0000  8248 bytes for ./Base.lproj/Main.storyboardc/zRy-hv-2dY-view-bTf-XJ-GaZ.nib
+2017-10-24 00:22:44 +0000  copying file ./ClassCoach ... 
+2017-10-24 00:22:44 +0000  3307328 bytes for ./ClassCoach
+2017-10-24 00:22:44 +0000  copying file ./embedded.mobileprovision ... 
+9493 bytes for ./embedded.mobileprovision
+copying file ./Frameworks/libswiftCore.dylib ... 
+2017-10-24 00:22:44 +0000  68656944 bytes for ./Frameworks/libswiftCore.dylib
+copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2017-10-24 00:22:44 +0000  257648 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+1268784 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftCoreImage.dylib ... 
+258208 bytes for ./Frameworks/libswiftCoreImage.dylib
+copying file ./Frameworks/libswiftDarwin.dylib ... 
+599216 bytes for ./Frameworks/libswiftDarwin.dylib
+copying file ./Frameworks/libswiftDispatch.dylib ... 
+2440688 bytes for ./Frameworks/libswiftDispatch.dylib
+copying file ./Frameworks/libswiftFoundation.dylib ... 
+2017-10-24 00:22:44 +0000  28714176 bytes for ./Frameworks/libswiftFoundation.dylib
+copying file ./Frameworks/libswiftMetal.dylib ... 
+2017-10-24 00:22:44 +0000  /usr/bin/ditto exited with 0
+2017-10-24 00:22:44 +0000  399328 bytes for ./Frameworks/libswiftMetal.dylib
+copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+505728 bytes for ./Frameworks/libswiftObjectiveC.dylib
+copying file ./Frameworks/libswiftos.dylib ... 
+446336 bytes for ./Frameworks/libswiftos.dylib
+copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+310928 bytes for ./Frameworks/libswiftQuartzCore.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+789136 bytes for ./Frameworks/libswiftUIKit.dylib
+copying file ./Info.plist ... 
+1480 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+8 bytes for ./PkgInfo
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionEmbedProfileStep
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa4fac0130 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffa54668f50:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCore.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa54126d40 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffa76b0d260:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa552f7aa0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffa57b57060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa586618a0 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffa505b8150:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreImage.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa58a6add0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffa5499f270:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDarwin.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa58c8ddd0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffa5839e590:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDispatch.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa5058de40 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffa54fd8060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftFoundation.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa5b0e6e90 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffa740dd690:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftMetal.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa5b64a5c0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffa534bded0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa57bf9f00 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffa52579020:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa58a08490 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffa5209c6f0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftUIKit.dylib'>'>
+2017-10-24 00:22:44 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffa57b88c90 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffa540e3200:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftos.dylib'>'>
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionItemRemovalStep
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2017-10-24 00:22:44 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2017-10-24 00:22:44 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2017-10-24 00:22:44 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2017-10-24 00:22:45 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2017-10-24 00:22:45 +0000  Running /usr/bin/ditto '-V' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/BCSymbolMaps/3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/BCSymbolMaps/3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap'
+2017-10-24 00:22:45 +0000  >>> Copying /Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/BCSymbolMaps/3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap 
+2017-10-24 00:22:45 +0000  copying file ./3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap ... 
+2017-10-24 00:22:45 +0000  153114 bytes for ./3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap
+2017-10-24 00:22:45 +0000  /usr/bin/ditto exited with 0
+2017-10-24 00:22:45 +0000  Running /usr/bin/ditto '-V' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/BCSymbolMaps/3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/BCSymbolMaps/3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap'
+2017-10-24 00:22:45 +0000  >>> Copying /Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/BCSymbolMaps/3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap 
+2017-10-24 00:22:45 +0000  copying file ./3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap ... 
+2017-10-24 00:22:45 +0000  152973 bytes for ./3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap
+2017-10-24 00:22:45 +0000  /usr/bin/ditto exited with 0
+2017-10-24 00:22:45 +0000  Processing step: IDEDistributionSymbolsStep
+2017-10-24 00:22:45 +0000  Processing symbols for libswiftCore.dylib
+2017-10-24 00:22:45 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCore.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:45 +0000  building file list ... 
+2017-10-24 00:22:45 +0000   0 files...2017-10-24 00:22:45 +0000  1 file to consider
+2017-10-24 00:22:45 +0000  
+2017-10-24 00:22:45 +0000  sent 91 bytes  received 20 bytes  222.00 bytes/sec
+total size is 65.48M  speedup is 618531.03
+2017-10-24 00:22:45 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:45 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:45 +0000  building file list ... 
+2017-10-24 00:22:45 +0000   0 files...2017-10-24 00:22:45 +0000  7 files to consider
+2017-10-24 00:22:45 +0000  ./
+2017-10-24 00:22:45 +0000  ClassCoach.app.dSYM/
+2017-10-24 00:22:45 +0000  ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:45 +0000  
+2017-10-24 00:22:45 +0000  sent 240 bytes  received 50 bytes  580.00 bytes/sec
+total size is 2.52M  speedup is 9112.79
+2017-10-24 00:22:45 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:45 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCore.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCore.dylib [armv7, 0.503312 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCore.dylib [armv7s, 0.503312 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCore.dylib [arm64, 0.503312 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftCoreFoundation.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+sent 101 bytes  received 20 bytes  242.00 bytes/sec
+total size is 251.61K  speedup is 2129.32
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreFoundation.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreFoundation.dylib [armv7, 0.001385 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreFoundation.dylib [armv7s, 0.001385 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreFoundation.dylib [arm64, 0.001385 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftCoreGraphics.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 99 bytes  received 20 bytes  238.00 bytes/sec
+total size is 1.21M  speedup is 10662.05
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreGraphics.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreGraphics.dylib [armv7, 0.009327 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreGraphics.dylib [armv7s, 0.009327 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreGraphics.dylib [arm64, 0.009327 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftCoreImage.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreImage.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+sent 96 bytes  received 20 bytes  232.00 bytes/sec
+total size is 252.16K  speedup is 2225.93
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+sent 252 bytes  received 62 bytes  628.00 bytes/sec
+2017-10-24 00:22:46 +0000  total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreImage.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreImage.dylib [armv7, 0.001249 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreImage.dylib [armv7s, 0.001249 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftCoreImage.dylib [arm64, 0.001249 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftDarwin.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDarwin.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+sent 93 bytes  received 20 bytes  226.00 bytes/sec
+total size is 585.17K  speedup is 5302.80
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+ClassCoach.app.dSYM/
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDarwin.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDarwin.dylib [armv7, 0.004715 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDarwin.dylib [armv7s, 0.004715 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDarwin.dylib [arm64, 0.004715 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftDispatch.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDispatch.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 95 bytes  received 20 bytes  230.00 bytes/sec
+total size is 2.33M  speedup is 21223.37
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDispatch.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDispatch.dylib [armv7, 0.023940 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDispatch.dylib [armv7s, 0.023940 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftDispatch.dylib [arm64, 0.023940 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftFoundation.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftFoundation.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+sent 97 bytes  received 20 bytes  234.00 bytes/sec
+total size is 27.38M  speedup is 245420.31
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftFoundation.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftFoundation.dylib [armv7, 0.157095 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftFoundation.dylib [armv7s, 0.157095 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftFoundation.dylib [arm64, 0.157095 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftMetal.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftMetal.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+sent 92 bytes  received 20 bytes  224.00 bytes/sec
+total size is 389.97K  speedup is 3565.43
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftMetal.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftMetal.dylib [armv7, 0.002246 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftMetal.dylib [armv7s, 0.002246 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftMetal.dylib [arm64, 0.002246 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftObjectiveC.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+sent 97 bytes  received 20 bytes  234.00 bytes/sec
+2017-10-24 00:22:46 +0000  total size is 493.88K  speedup is 4322.46
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+sent 252 bytes  received 62 bytes  628.00 bytes/sec
+2017-10-24 00:22:46 +0000  total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftObjectiveC.dylib'
+2017-10-24 00:22:46 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftObjectiveC.dylib [armv7, 0.003320 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftObjectiveC.dylib [armv7s, 0.003320 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftObjectiveC.dylib [arm64, 0.003320 seconds]:
+2017-10-24 00:22:46 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:46 +0000  Processing symbols for libswiftQuartzCore.dylib
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  1 file to consider
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 97 bytes  received 20 bytes  234.00 bytes/sec
+total size is 303.64K  speedup is 2657.50
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:46 +0000  building file list ... 
+2017-10-24 00:22:46 +0000   0 files...2017-10-24 00:22:46 +0000  7 files to consider
+2017-10-24 00:22:46 +0000  ./
+2017-10-24 00:22:46 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:46 +0000  
+2017-10-24 00:22:46 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:46 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:46 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftQuartzCore.dylib'
+2017-10-24 00:22:47 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftQuartzCore.dylib [armv7, 0.001767 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftQuartzCore.dylib [armv7s, 0.001767 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftQuartzCore.dylib [arm64, 0.001767 seconds]:
+2017-10-24 00:22:47 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:47 +0000  Processing symbols for libswiftUIKit.dylib
+2017-10-24 00:22:47 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftUIKit.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:47 +0000  building file list ... 
+2017-10-24 00:22:47 +0000   0 files...2017-10-24 00:22:47 +0000  1 file to consider
+2017-10-24 00:22:47 +0000  
+sent 92 bytes  received 20 bytes  224.00 bytes/sec
+2017-10-24 00:22:47 +0000  total size is 770.64K  speedup is 7045.86
+2017-10-24 00:22:47 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:47 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:47 +0000  building file list ... 
+2017-10-24 00:22:47 +0000   0 files...2017-10-24 00:22:47 +0000  7 files to consider
+2017-10-24 00:22:47 +0000  ./
+2017-10-24 00:22:47 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:47 +0000  
+2017-10-24 00:22:47 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:47 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:47 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftUIKit.dylib'
+2017-10-24 00:22:47 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftUIKit.dylib [armv7, 0.006168 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftUIKit.dylib [armv7s, 0.006168 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftUIKit.dylib [arm64, 0.006168 seconds]:
+2017-10-24 00:22:47 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:47 +0000  Processing symbols for libswiftos.dylib
+2017-10-24 00:22:47 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftos.dylib' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:47 +0000  building file list ... 
+2017-10-24 00:22:47 +0000   0 files...2017-10-24 00:22:47 +0000  1 file to consider
+2017-10-24 00:22:47 +0000  
+2017-10-24 00:22:47 +0000  sent 89 bytes  received 20 bytes  218.00 bytes/sec
+total size is 435.88K  speedup is 4094.83
+2017-10-24 00:22:47 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:47 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '--link-dest' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/dSYMs/' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3'
+2017-10-24 00:22:47 +0000  building file list ... 
+2017-10-24 00:22:47 +0000   0 files...2017-10-24 00:22:47 +0000  7 files to consider
+2017-10-24 00:22:47 +0000  ./
+2017-10-24 00:22:47 +0000  ClassCoach.app.dSYM/
+ClassCoach.app.dSYM/Contents/
+ClassCoach.app.dSYM/Contents/Resources/
+ClassCoach.app.dSYM/Contents/Resources/DWARF/
+2017-10-24 00:22:47 +0000  
+2017-10-24 00:22:47 +0000  sent 252 bytes  received 62 bytes  628.00 bytes/sec
+total size is 2.52M  speedup is 8416.27
+2017-10-24 00:22:47 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:47 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftos.dylib'
+2017-10-24 00:22:47 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftos.dylib [armv7, 0.002279 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftos.dylib [armv7s, 0.002279 seconds]:
+/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/libswiftos.dylib [arm64, 0.002279 seconds]:
+2017-10-24 00:22:47 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-24 00:22:47 +0000  Excluding symbols for ClassCoach.app
+2017-10-24 00:22:47 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2017-10-24 00:22:47 +0000  Running /usr/bin/ditto '-V' '/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/SwiftSupport' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/SwiftSupport'
+2017-10-24 00:22:47 +0000  >>> Copying /Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/SwiftSupport 
+2017-10-24 00:22:47 +0000  copying file ./iphoneos/libswiftCore.dylib ... 
+2017-10-24 00:22:47 +0000  99816676 bytes for ./iphoneos/libswiftCore.dylib
+copying file ./iphoneos/libswiftCoreFoundation.dylib ... 
+2017-10-24 00:22:47 +0000  287482 bytes for ./iphoneos/libswiftCoreFoundation.dylib
+2017-10-24 00:22:47 +0000  copying file ./iphoneos/libswiftCoreGraphics.dylib ... 
+2017-10-24 00:22:47 +0000  1736759 bytes for ./iphoneos/libswiftCoreGraphics.dylib
+2017-10-24 00:22:47 +0000  copying file ./iphoneos/libswiftCoreImage.dylib ... 
+300284 bytes for ./iphoneos/libswiftCoreImage.dylib
+copying file ./iphoneos/libswiftDarwin.dylib ... 
+790219 bytes for ./iphoneos/libswiftDarwin.dylib
+copying file ./iphoneos/libswiftDispatch.dylib ... 
+2017-10-24 00:22:47 +0000  3397799 bytes for ./iphoneos/libswiftDispatch.dylib
+copying file ./iphoneos/libswiftFoundation.dylib ... 
+2017-10-24 00:22:47 +0000  42133455 bytes for ./iphoneos/libswiftFoundation.dylib
+copying file ./iphoneos/libswiftMetal.dylib ... 
+2017-10-24 00:22:47 +0000  503966 bytes for ./iphoneos/libswiftMetal.dylib
+copying file ./iphoneos/libswiftObjectiveC.dylib ... 
+681140 bytes for ./iphoneos/libswiftObjectiveC.dylib
+copying file ./iphoneos/libswiftos.dylib ... 
+589582 bytes for ./iphoneos/libswiftos.dylib
+copying file ./iphoneos/libswiftQuartzCore.dylib ... 
+370090 bytes for ./iphoneos/libswiftQuartzCore.dylib
+copying file ./iphoneos/libswiftUIKit.dylib ... 
+1117111 bytes for ./iphoneos/libswiftUIKit.dylib
+2017-10-24 00:22:47 +0000  /usr/bin/ditto exited with 0
+2017-10-24 00:22:47 +0000  Processing step: IDEDistributionAppThinningStep
+2017-10-24 00:22:47 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2017-10-24 00:22:47 +0000  Processing step: IDEDistributionODRStep
+2017-10-24 00:22:47 +0000  Processing step: IDEDistributionStripXattrsStep
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa4fac0130 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffa54668f50:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCore.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa54126d40 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffa76b0d260:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa552f7aa0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffa57b57060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa586618a0 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffa505b8150:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreImage.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa58a6add0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffa5499f270:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDarwin.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa58c8ddd0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffa5839e590:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDispatch.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa5058de40 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffa54fd8060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftFoundation.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa5b0e6e90 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffa740dd690:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftMetal.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa5b64a5c0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffa534bded0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa57bf9f00 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffa52579020:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa58a08490 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffa5209c6f0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftUIKit.dylib'>'>
+2017-10-24 00:22:47 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffa57b88c90 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffa540e3200:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftos.dylib'>'>
+2017-10-24 00:22:47 +0000  Running /usr/bin/xattr '-cr' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app'
+2017-10-24 00:22:47 +0000  /usr/bin/xattr exited with 0
+2017-10-24 00:22:47 +0000  Processing step: IDEDistributionCodesignStep
+2017-10-24 00:22:47 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa4fac0130 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffa54668f50:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa589a7680>: {
+}
+2017-10-24 00:22:47 +0000  Entitlements for <IDEDistributionItem: 0x7ffa4fac0130 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffa54668f50:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCore.dylib'>'>: {
+}
+2017-10-24 00:22:47 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa4fac0130 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffa54668f50:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsnQp2M4
+2017-10-24 00:22:47 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsnQp2M4' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCore.dylib'
+2017-10-24 00:22:47 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2017-10-24 00:22:48 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:48 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa54126d40 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffa76b0d260:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa520dfd40>: {
+}
+2017-10-24 00:22:48 +0000  Entitlements for <IDEDistributionItem: 0x7ffa54126d40 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffa76b0d260:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
+}
+2017-10-24 00:22:48 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa54126d40 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffa76b0d260:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsXbwJxt
+2017-10-24 00:22:48 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsXbwJxt' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib'
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2017-10-24 00:22:48 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:48 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa552f7aa0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffa57b57060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa54ed0270>: {
+}
+2017-10-24 00:22:48 +0000  Entitlements for <IDEDistributionItem: 0x7ffa552f7aa0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffa57b57060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+}
+2017-10-24 00:22:48 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa552f7aa0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffa57b57060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements2AdAKd
+2017-10-24 00:22:48 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements2AdAKd' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib'
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2017-10-24 00:22:48 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:48 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa586618a0 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffa505b8150:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreImage.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa589b0050>: {
+}
+2017-10-24 00:22:48 +0000  Entitlements for <IDEDistributionItem: 0x7ffa586618a0 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffa505b8150:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreImage.dylib'>'>: {
+}
+2017-10-24 00:22:48 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa586618a0 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffa505b8150:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementstXvfxj
+2017-10-24 00:22:48 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementstXvfxj' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreImage.dylib'
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2017-10-24 00:22:48 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:48 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa58a6add0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffa5499f270:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDarwin.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa57edce90>: {
+}
+2017-10-24 00:22:48 +0000  Entitlements for <IDEDistributionItem: 0x7ffa58a6add0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffa5499f270:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDarwin.dylib'>'>: {
+}
+2017-10-24 00:22:48 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa58a6add0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffa5499f270:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsKsowX3
+2017-10-24 00:22:48 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsKsowX3' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDarwin.dylib'
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2017-10-24 00:22:48 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:48 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa58c8ddd0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffa5839e590:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDispatch.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa5899b350>: {
+}
+2017-10-24 00:22:48 +0000  Entitlements for <IDEDistributionItem: 0x7ffa58c8ddd0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffa5839e590:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2017-10-24 00:22:48 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa58c8ddd0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffa5839e590:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsp22mIN
+2017-10-24 00:22:48 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsp22mIN' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDispatch.dylib'
+2017-10-24 00:22:48 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2017-10-24 00:22:49 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:49 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa5058de40 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffa54fd8060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa58992450>: {
+}
+2017-10-24 00:22:49 +0000  Entitlements for <IDEDistributionItem: 0x7ffa5058de40 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffa54fd8060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftFoundation.dylib'>'>: {
+}
+2017-10-24 00:22:49 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa5058de40 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffa54fd8060:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements6jQB0D
+2017-10-24 00:22:49 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements6jQB0D' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftFoundation.dylib'
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2017-10-24 00:22:49 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:49 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa5b0e6e90 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffa740dd690:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftMetal.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa53f10750>: {
+}
+2017-10-24 00:22:49 +0000  Entitlements for <IDEDistributionItem: 0x7ffa5b0e6e90 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffa740dd690:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftMetal.dylib'>'>: {
+}
+2017-10-24 00:22:49 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa5b0e6e90 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffa740dd690:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsMkk0DI
+2017-10-24 00:22:49 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsMkk0DI' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftMetal.dylib'
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2017-10-24 00:22:49 +0000  
+2017-10-24 00:22:49 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:49 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa5b64a5c0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffa534bded0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa5855f3b0>: {
+}
+2017-10-24 00:22:49 +0000  Entitlements for <IDEDistributionItem: 0x7ffa5b64a5c0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffa534bded0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
+}
+2017-10-24 00:22:49 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa5b64a5c0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffa534bded0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements50uHtU
+2017-10-24 00:22:49 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements50uHtU' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib'
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2017-10-24 00:22:49 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:49 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa57bf9f00 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffa52579020:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa585cea80>: {
+}
+2017-10-24 00:22:49 +0000  Entitlements for <IDEDistributionItem: 0x7ffa57bf9f00 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffa52579020:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
+}
+2017-10-24 00:22:49 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa57bf9f00 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffa52579020:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsQhAu1u
+2017-10-24 00:22:49 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsQhAu1u' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib'
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2017-10-24 00:22:49 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2017-10-24 00:22:49 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:49 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa58a08490 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffa5209c6f0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftUIKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa589bf8f0>: {
+}
+2017-10-24 00:22:49 +0000  Entitlements for <IDEDistributionItem: 0x7ffa58a08490 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffa5209c6f0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftUIKit.dylib'>'>: {
+}
+2017-10-24 00:22:49 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa58a08490 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffa5209c6f0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsMo6IZr
+2017-10-24 00:22:49 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsMo6IZr' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftUIKit.dylib'
+2017-10-24 00:22:50 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2017-10-24 00:22:50 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2017-10-24 00:22:50 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:50 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa57b88c90 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffa540e3200:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftos.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa58964980>: {
+}
+2017-10-24 00:22:50 +0000  Entitlements for <IDEDistributionItem: 0x7ffa57b88c90 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffa540e3200:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftos.dylib'>'>: {
+}
+2017-10-24 00:22:50 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa57b88c90 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffa540e3200:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsHw4I0Y
+2017-10-24 00:22:50 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlementsHw4I0Y' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftos.dylib'
+2017-10-24 00:22:50 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftos.dylib: replacing existing signature
+2017-10-24 00:22:50 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2017-10-24 00:22:50 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:50 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffa58575a30 'shobel.ClassCoach' '<DVTFilePath:0x7ffa540f5da0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffa4e984f10>: {
+}
+2017-10-24 00:22:50 +0000  Entitlements for <IDEDistributionItem: 0x7ffa58575a30 'shobel.ClassCoach' '<DVTFilePath:0x7ffa540f5da0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app'>'>: {
+    "application-identifier" = "BDZT3U3R7D.shobel.ClassCoach";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = BDZT3U3R7D;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "BDZT3U3R7D.shobel.ClassCoach"
+    );
+}
+2017-10-24 00:22:50 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffa58575a30 'shobel.ClassCoach' '<DVTFilePath:0x7ffa540f5da0:'/Users/shobel/Library/Developer/Xcode/Archives/2017-10-23/ClassCoach 10-23-17, 5.10 PM.xcarchive/Products/Applications/ClassCoach.app'>'> to: /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements8mxFYB
+2017-10-24 00:22:50 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A12014FA06BFCEB7C6FC476218EBD34B3CBE753E' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/entitlements8mxFYB' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app'
+2017-10-24 00:22:50 +0000  /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root/Payload/ClassCoach.app: signed app bundle with Mach-O universal (armv7 arm64) [shobel.ClassCoach]
+2017-10-24 00:22:51 +0000  /usr/bin/codesign exited with 0
+2017-10-24 00:22:51 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-24 00:22:51 +0000  Processing step: IDEDistributionCreateIPAStep
+2017-10-24 00:22:51 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Symbols' '--link-dest' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root'
+2017-10-24 00:22:51 +0000  building file list ... 
+2017-10-24 00:22:51 +0000   0 files...2017-10-24 00:22:51 +0000  37 files to consider
+2017-10-24 00:22:51 +0000  Symbols/
+2017-10-24 00:22:51 +0000  
+2017-10-24 00:22:51 +0000  sent 1.94K bytes  received 26 bytes  3.93K bytes/sec
+total size is 18.57M  speedup is 9668.18
+2017-10-24 00:22:51 +0000  /usr/bin/rsync exited with 0
+2017-10-24 00:22:51 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root' '/var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Packages/ClassCoach.ipa'
+2017-10-24 00:22:51 +0000  >>> Copying /var/folders/rt/hv8bn11j6mq76f6yygc_p6c40000gq/T/XcodeDistPipeline.RO3/Root 
+2017-10-24 00:22:51 +0000  copying file ./BCSymbolMaps/3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap ... 
+2017-10-24 00:22:51 +0000  152973 bytes for ./BCSymbolMaps/3A0D7C3C-5BCA-3AC0-95DB-211F596EBBCB.bcsymbolmap
+copying file ./BCSymbolMaps/3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap ... 
+2017-10-24 00:22:51 +0000  153114 bytes for ./BCSymbolMaps/3C8937E0-F02D-360E-9061-DBD5FB10BF3C.bcsymbolmap
+2017-10-24 00:22:51 +0000  copying file ./Payload/ClassCoach.app/_CodeSignature/CodeResources ... 
+2017-10-24 00:22:51 +0000  17709 bytes for ./Payload/ClassCoach.app/_CodeSignature/CodeResources
+2017-10-24 00:22:51 +0000  copying file ./Payload/ClassCoach.app/AppIcon20x20@2x.png ... 
+2017-10-24 00:22:51 +0000  3255 bytes for ./Payload/ClassCoach.app/AppIcon20x20@2x.png
+copying file ./Payload/ClassCoach.app/AppIcon20x20@2x~ipad.png ... 
+2017-10-24 00:22:51 +0000  3255 bytes for ./Payload/ClassCoach.app/AppIcon20x20@2x~ipad.png
+2017-10-24 00:22:51 +0000  copying file ./Payload/ClassCoach.app/AppIcon20x20@3x.png ... 
+2017-10-24 00:22:51 +0000  5494 bytes for ./Payload/ClassCoach.app/AppIcon20x20@3x.png
+copying file ./Payload/ClassCoach.app/AppIcon20x20~ipad.png ... 
+2017-10-24 00:22:51 +0000  1286 bytes for ./Payload/ClassCoach.app/AppIcon20x20~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon29x29@2x.png ... 
+2017-10-24 00:22:51 +0000  5240 bytes for ./Payload/ClassCoach.app/AppIcon29x29@2x.png
+copying file ./Payload/ClassCoach.app/AppIcon29x29@2x~ipad.png ... 
+2017-10-24 00:22:51 +0000  5240 bytes for ./Payload/ClassCoach.app/AppIcon29x29@2x~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon29x29@3x.png ... 
+2017-10-24 00:22:51 +0000  9008 bytes for ./Payload/ClassCoach.app/AppIcon29x29@3x.png
+copying file ./Payload/ClassCoach.app/AppIcon29x29~ipad.png ... 
+2017-10-24 00:22:51 +0000  2133 bytes for ./Payload/ClassCoach.app/AppIcon29x29~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon40x40@2x.png ... 
+2017-10-24 00:22:51 +0000  8188 bytes for ./Payload/ClassCoach.app/AppIcon40x40@2x.png
+copying file ./Payload/ClassCoach.app/AppIcon40x40@2x~ipad.png ... 
+2017-10-24 00:22:51 +0000  8188 bytes for ./Payload/ClassCoach.app/AppIcon40x40@2x~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon40x40@3x.png ... 
+2017-10-24 00:22:51 +0000  13952 bytes for ./Payload/ClassCoach.app/AppIcon40x40@3x.png
+copying file ./Payload/ClassCoach.app/AppIcon40x40~ipad.png ... 
+2017-10-24 00:22:51 +0000  3255 bytes for ./Payload/ClassCoach.app/AppIcon40x40~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon60x60@2x.png ... 
+2017-10-24 00:22:51 +0000  13952 bytes for ./Payload/ClassCoach.app/AppIcon60x60@2x.png
+copying file ./Payload/ClassCoach.app/AppIcon60x60@3x.png ... 
+2017-10-24 00:22:51 +0000  27320 bytes for ./Payload/ClassCoach.app/AppIcon60x60@3x.png
+copying file ./Payload/ClassCoach.app/AppIcon76x76@2x~ipad.png ... 
+2017-10-24 00:22:51 +0000  20279 bytes for ./Payload/ClassCoach.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon76x76~ipad.png ... 
+2017-10-24 00:22:51 +0000  7836 bytes for ./Payload/ClassCoach.app/AppIcon76x76~ipad.png
+copying file ./Payload/ClassCoach.app/AppIcon83.5x83.5@2x~ipad.png ... 
+2017-10-24 00:22:51 +0000  24289 bytes for ./Payload/ClassCoach.app/AppIcon83.5x83.5@2x~ipad.png
+copying file ./Payload/ClassCoach.app/archived-expanded-entitlements.xcent ... 
+2017-10-24 00:22:51 +0000  372 bytes for ./Payload/ClassCoach.app/archived-expanded-entitlements.xcent
+copying file ./Payload/ClassCoach.app/Assets.car ... 
+2017-10-24 00:22:51 +0000  1302440 bytes for ./Payload/ClassCoach.app/Assets.car
+2017-10-24 00:22:51 +0000  copying file ./Payload/ClassCoach.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2017-10-24 00:22:51 +0000  4016 bytes for ./Payload/ClassCoach.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Payload/ClassCoach.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/ClassCoach.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2017-10-24 00:22:51 +0000  832 bytes for ./Payload/ClassCoach.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/ClassListNav.nib ... 
+2017-10-24 00:22:51 +0000  3409 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/ClassListNav.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/classListVC.nib ... 
+2017-10-24 00:22:51 +0000  2809 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/classListVC.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/emojieVC.nib ... 
+2017-10-24 00:22:51 +0000  1085 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/emojieVC.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2017-10-24 00:22:51 +0000  483 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/JhP-aF-WAA-view-aK2-4u-JYM.nib ... 
+2017-10-24 00:22:51 +0000  24674 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/JhP-aF-WAA-view-aK2-4u-JYM.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/Mih-Gs-MJ9-view-4Am-Iw-7av.nib ... 
+2017-10-24 00:22:51 +0000  5807 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/Mih-Gs-MJ9-view-4Am-Iw-7av.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/Nm9-p8-RPg-view-C7W-mc-H5U.nib ... 
+2017-10-24 00:22:51 +0000  13533 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/Nm9-p8-RPg-view-C7W-mc-H5U.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/qnY-Sg-qe5-view-r2i-dP-pIb.nib ... 
+2017-10-24 00:22:51 +0000  6380 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/qnY-Sg-qe5-view-r2i-dP-pIb.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/UITableViewController-JhP-aF-WAA.nib ... 
+2017-10-24 00:22:51 +0000  1952 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/UITableViewController-JhP-aF-WAA.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/UITableViewController-Nm9-p8-RPg.nib ... 
+2017-10-24 00:22:51 +0000  1820 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/UITableViewController-Nm9-p8-RPg.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/UITableViewController-zRy-hv-2dY.nib ... 
+2017-10-24 00:22:51 +0000  1824 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/UITableViewController-zRy-hv-2dY.nib
+copying file ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/zRy-hv-2dY-view-bTf-XJ-GaZ.nib ... 
+2017-10-24 00:22:51 +0000  8248 bytes for ./Payload/ClassCoach.app/Base.lproj/Main.storyboardc/zRy-hv-2dY-view-bTf-XJ-GaZ.nib
+2017-10-24 00:22:51 +0000  copying file ./Payload/ClassCoach.app/ClassCoach ... 
+2017-10-24 00:22:51 +0000  2567728 bytes for ./Payload/ClassCoach.app/ClassCoach
+copying file ./Payload/ClassCoach.app/embedded.mobileprovision ... 
+2017-10-24 00:22:51 +0000  9369 bytes for ./Payload/ClassCoach.app/embedded.mobileprovision
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftCore.dylib ... 
+2017-10-24 00:22:54 +0000  68657296 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftCore.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2017-10-24 00:22:54 +0000  258016 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftCoreFoundation.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2017-10-24 00:22:54 +0000  1269152 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftCoreGraphics.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftCoreImage.dylib ... 
+2017-10-24 00:22:54 +0000  258576 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftCoreImage.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftDarwin.dylib ... 
+2017-10-24 00:22:54 +0000  599584 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftDarwin.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftDispatch.dylib ... 
+2017-10-24 00:22:54 +0000  2441040 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftDispatch.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftFoundation.dylib ... 
+2017-10-24 00:22:55 +0000  28714528 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftFoundation.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftMetal.dylib ... 
+2017-10-24 00:22:55 +0000  399680 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftMetal.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib ... 
+2017-10-24 00:22:55 +0000  506096 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftos.dylib ... 
+2017-10-24 00:22:55 +0000  446704 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftos.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib ... 
+2017-10-24 00:22:55 +0000  311280 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftQuartzCore.dylib
+copying file ./Payload/ClassCoach.app/Frameworks/libswiftUIKit.dylib ... 
+2017-10-24 00:22:55 +0000  789488 bytes for ./Payload/ClassCoach.app/Frameworks/libswiftUIKit.dylib
+2017-10-24 00:22:55 +0000  copying file ./Payload/ClassCoach.app/Info.plist ... 
+1480 bytes for ./Payload/ClassCoach.app/Info.plist
+copying file ./Payload/ClassCoach.app/PkgInfo ... 
+2017-10-24 00:22:55 +0000  8 bytes for ./Payload/ClassCoach.app/PkgInfo
+2017-10-24 00:22:55 +0000  copying file ./SwiftSupport/iphoneos/libswiftCore.dylib ... 
+2017-10-24 00:22:59 +0000  68656880 bytes for ./SwiftSupport/iphoneos/libswiftCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib ... 
+2017-10-24 00:22:59 +0000  257584 bytes for ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib ... 
+2017-10-24 00:22:59 +0000  1268736 bytes for ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreImage.dylib ... 
+2017-10-24 00:22:59 +0000  258160 bytes for ./SwiftSupport/iphoneos/libswiftCoreImage.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDarwin.dylib ... 
+2017-10-24 00:22:59 +0000  599168 bytes for ./SwiftSupport/iphoneos/libswiftDarwin.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDispatch.dylib ... 
+2017-10-24 00:22:59 +0000  2440624 bytes for ./SwiftSupport/iphoneos/libswiftDispatch.dylib
+copying file ./SwiftSupport/iphoneos/libswiftFoundation.dylib ... 
+2017-10-24 00:23:00 +0000  28714112 bytes for ./SwiftSupport/iphoneos/libswiftFoundation.dylib
+copying file ./SwiftSupport/iphoneos/libswiftMetal.dylib ... 
+2017-10-24 00:23:00 +0000  399264 bytes for ./SwiftSupport/iphoneos/libswiftMetal.dylib
+copying file ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib ... 
+2017-10-24 00:23:00 +0000  505680 bytes for ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib
+copying file ./SwiftSupport/iphoneos/libswiftos.dylib ... 
+2017-10-24 00:23:00 +0000  446288 bytes for ./SwiftSupport/iphoneos/libswiftos.dylib
+copying file ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib ... 
+2017-10-24 00:23:00 +0000  310864 bytes for ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftUIKit.dylib ... 
+2017-10-24 00:23:00 +0000  789072 bytes for ./SwiftSupport/iphoneos/libswiftUIKit.dylib
+2017-10-24 00:23:00 +0000  copying file ./Symbols/003EB549-A537-38D9-AC6D-630172076D97.symbols ... 
+2017-10-24 00:23:00 +0000  232040 bytes for ./Symbols/003EB549-A537-38D9-AC6D-630172076D97.symbols
+copying file ./Symbols/00D7B99C-8753-33F6-A34D-27C571405B69.symbols ... 
+2017-10-24 00:23:00 +0000  4424136 bytes for ./Symbols/00D7B99C-8753-33F6-A34D-27C571405B69.symbols
+copying file ./Symbols/2D1AD181-9BE5-3B5D-9763-0CC37C1ECBED.symbols ... 
+2017-10-24 00:23:00 +0000  234272 bytes for ./Symbols/2D1AD181-9BE5-3B5D-9763-0CC37C1ECBED.symbols
+copying file ./Symbols/2DC4080D-B163-3A86-8A84-B89F0B387201.symbols ... 
+2017-10-24 00:23:00 +0000  96392 bytes for ./Symbols/2DC4080D-B163-3A86-8A84-B89F0B387201.symbols
+copying file ./Symbols/388CFD35-9306-3DEA-B06B-49BF01CF97B2.symbols ... 
+2017-10-24 00:23:00 +0000  2352 bytes for ./Symbols/388CFD35-9306-3DEA-B06B-49BF01CF97B2.symbols
+2017-10-24 00:23:00 +0000  copying file ./Symbols/3C3A577E-E49B-35F2-B01F-12FE620161CF.symbols ... 
+2017-10-24 00:23:00 +0000  96536 bytes for ./Symbols/3C3A577E-E49B-35F2-B01F-12FE620161CF.symbols
+copying file ./Symbols/3F1C75E6-8428-3FAA-A2DD-4908F661DF69.symbols ... 
+2017-10-24 00:23:01 +0000  4442384 bytes for ./Symbols/3F1C75E6-8428-3FAA-A2DD-4908F661DF69.symbols
+copying file ./Symbols/4853D270-3A37-3242-B86B-21123E72CAC8.symbols ... 
+2017-10-24 00:23:01 +0000  1569136 bytes for ./Symbols/4853D270-3A37-3242-B86B-21123E72CAC8.symbols
+copying file ./Symbols/4B594AEB-6398-31CA-9490-A393F272359C.symbols ... 
+2017-10-24 00:23:01 +0000  7384 bytes for ./Symbols/4B594AEB-6398-31CA-9490-A393F272359C.symbols
+copying file ./Symbols/4EA83B15-36E9-31F4-9315-AB3416C01E59.symbols ... 
+2017-10-24 00:23:01 +0000  7656 bytes for ./Symbols/4EA83B15-36E9-31F4-9315-AB3416C01E59.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/6EAA319B-5681-39FB-A8DB-E21FAF4BEEED.symbols ... 
+2017-10-24 00:23:01 +0000  13056 bytes for ./Symbols/6EAA319B-5681-39FB-A8DB-E21FAF4BEEED.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/7066E84D-D4DC-3482-9198-4BBD2D4C2EAE.symbols ... 
+2017-10-24 00:23:01 +0000  55664 bytes for ./Symbols/7066E84D-D4DC-3482-9198-4BBD2D4C2EAE.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/7716DD88-4190-37DA-95EE-159914EB0CB3.symbols ... 
+2017-10-24 00:23:01 +0000  1565808 bytes for ./Symbols/7716DD88-4190-37DA-95EE-159914EB0CB3.symbols
+copying file ./Symbols/7E5DF1EE-1149-31B0-A59A-DCE3C08C7230.symbols ... 
+2017-10-24 00:23:01 +0000  234128 bytes for ./Symbols/7E5DF1EE-1149-31B0-A59A-DCE3C08C7230.symbols
+copying file ./Symbols/9BACF849-D82F-3A4E-9E2B-3EB5B5116F61.symbols ... 
+2017-10-24 00:23:01 +0000  37952 bytes for ./Symbols/9BACF849-D82F-3A4E-9E2B-3EB5B5116F61.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/9F69334E-EC6E-32D5-9FE9-A43A125B315D.symbols ... 
+2017-10-24 00:23:01 +0000  96608 bytes for ./Symbols/9F69334E-EC6E-32D5-9FE9-A43A125B315D.symbols
+copying file ./Symbols/9F7C74F8-C969-3953-80B3-7EFFAD9352FB.symbols ... 
+2017-10-24 00:23:01 +0000  12128 bytes for ./Symbols/9F7C74F8-C969-3953-80B3-7EFFAD9352FB.symbols
+copying file ./Symbols/A4DB20C7-5415-39B0-8309-5D03BB1D221F.symbols ... 
+2017-10-24 00:23:01 +0000  4442968 bytes for ./Symbols/A4DB20C7-5415-39B0-8309-5D03BB1D221F.symbols
+copying file ./Symbols/A7DAF8B0-C45C-318B-B0DB-F124E22549C8.symbols ... 
+2017-10-24 00:23:01 +0000  12304 bytes for ./Symbols/A7DAF8B0-C45C-318B-B0DB-F124E22549C8.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/B127D00B-0571-3656-B9A1-0271A336298F.symbols ... 
+2017-10-24 00:23:01 +0000  7384 bytes for ./Symbols/B127D00B-0571-3656-B9A1-0271A336298F.symbols
+copying file ./Symbols/B65ECE91-532E-39F5-B968-A8AC8707DA14.symbols ... 
+2017-10-24 00:23:01 +0000  55696 bytes for ./Symbols/B65ECE91-532E-39F5-B968-A8AC8707DA14.symbols
+copying file ./Symbols/BBDF0A1A-ADCB-3198-B8EA-5C8FBAE49155.symbols ... 
+2017-10-24 00:23:01 +0000  23944 bytes for ./Symbols/BBDF0A1A-ADCB-3198-B8EA-5C8FBAE49155.symbols
+copying file ./Symbols/C2805455-D517-3139-8FA0-6601B3554E60.symbols ... 
+2017-10-24 00:23:01 +0000  2456 bytes for ./Symbols/C2805455-D517-3139-8FA0-6601B3554E60.symbols
+copying file ./Symbols/D2CE380A-0B3C-35CC-886B-CC49D014E7A5.symbols ... 
+2017-10-24 00:23:01 +0000  13232 bytes for ./Symbols/D2CE380A-0B3C-35CC-886B-CC49D014E7A5.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/E1CC0BAB-275E-36B6-AB8E-95257EB28056.symbols ... 
+2017-10-24 00:23:01 +0000  1568992 bytes for ./Symbols/E1CC0BAB-275E-36B6-AB8E-95257EB28056.symbols
+copying file ./Symbols/E626D125-31B3-3352-A943-92618EA9FA51.symbols ... 
+2017-10-24 00:23:01 +0000  24376 bytes for ./Symbols/E626D125-31B3-3352-A943-92618EA9FA51.symbols
+copying file ./Symbols/E79A8C71-8A85-30C8-A34A-64CF81EBADCA.symbols ... 
+2017-10-24 00:23:01 +0000  2816 bytes for ./Symbols/E79A8C71-8A85-30C8-A34A-64CF81EBADCA.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/EB2AD186-C55B-3355-83D2-3C5A2602391B.symbols ... 
+2017-10-24 00:23:01 +0000  2352 bytes for ./Symbols/EB2AD186-C55B-3355-83D2-3C5A2602391B.symbols
+copying file ./Symbols/EC150235-3D26-3D29-B1C9-FD5098EAFB48.symbols ... 
+2017-10-24 00:23:01 +0000  2728 bytes for ./Symbols/EC150235-3D26-3D29-B1C9-FD5098EAFB48.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/EE40B5A2-2800-32C7-97AE-02890DC11DDF.symbols ... 
+2017-10-24 00:23:01 +0000  13056 bytes for ./Symbols/EE40B5A2-2800-32C7-97AE-02890DC11DDF.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/EE9267E2-EB33-3C7B-B691-81A67617DB8F.symbols ... 
+2017-10-24 00:23:01 +0000  12304 bytes for ./Symbols/EE9267E2-EB33-3C7B-B691-81A67617DB8F.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/F6BD8BF7-078F-3E4B-8C10-C4777A7BD9C8.symbols ... 
+2017-10-24 00:23:01 +0000  38552 bytes for ./Symbols/F6BD8BF7-078F-3E4B-8C10-C4777A7BD9C8.symbols
+copying file ./Symbols/F8EE6BD6-73F2-3A96-BA45-9173158DC93C.symbols ... 
+2017-10-24 00:23:01 +0000  2728 bytes for ./Symbols/F8EE6BD6-73F2-3A96-BA45-9173158DC93C.symbols
+2017-10-24 00:23:01 +0000  copying file ./Symbols/F9D5BB4C-A5C6-3136-8071-F8FA8A2ACEB9.symbols ... 
+2017-10-24 00:23:01 +0000  55696 bytes for ./Symbols/F9D5BB4C-A5C6-3136-8071-F8FA8A2ACEB9.symbols
+copying file ./Symbols/FA5E2554-677D-3F2D-8782-F5D6AE699FAB.symbols ... 
+2017-10-24 00:23:01 +0000  38552 bytes for ./Symbols/FA5E2554-677D-3F2D-8782-F5D6AE699FAB.symbols
+copying file ./Symbols/FF522AA2-A84D-384F-8E75-64401ACB6EC6.symbols ... 
+2017-10-24 00:23:01 +0000  23944 bytes for ./Symbols/FF522AA2-A84D-384F-8E75-64401ACB6EC6.symbols
+2017-10-24 00:23:01 +0000  /usr/bin/ditto exited with 0
+2017-10-24 00:23:01 +0000  Processing step: IDEDistributionCreateManifestStep
+2017-10-24 00:23:01 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

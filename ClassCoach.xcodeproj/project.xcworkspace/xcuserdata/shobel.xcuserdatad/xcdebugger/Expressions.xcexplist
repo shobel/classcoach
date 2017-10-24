@@ -263,6 +263,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DetailTableViewController.validate():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "adding">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailTableViewController.checkIfStudentExists():DetailTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "student.nameFirst">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "EmojieViewController.collectionView(UICollectionView, didSelectItemAt : IndexPath) -&gt; ():EmojieViewController.swift">
          <PersistentStrings>
             <PersistentString

@@ -263,11 +263,15 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     }
     
     private func checkIfStudentExists() -> Bool{
+        var matchesRequired = 2
+        if adding {
+            matchesRequired = 1
+        }
         var numMatches = 0
         for savedStudent in DataHolder.sharedInstance.classList {
             if savedStudent.nameFirst == student.nameFirst && savedStudent.nameLast == student.nameLast {
                 numMatches+=1
-                if (numMatches >= 2){
+                if (numMatches >= matchesRequired){
                     return true
                 }
             }
