@@ -36,6 +36,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         // Setup the Search Controller
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
        
         searchController.searchBar.layer.borderWidth = 1
         searchController.searchBar.layer.borderColor = DataHolder.sharedInstance.themeColor.cgColor
@@ -53,7 +54,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
         let tap = UITapGestureRecognizer(target: self, action: #selector(deleteAll))
         deleteAllView.addGestureRecognizer(tap)
         
-        //self.navigationController?.navigationBar.isTranslucent = false
+        //self.navigationController?.navigationBar.isTranslucent = true
         //UserDefaults.standard.removeObject(forKey: "launchedBefore")
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if !launchedBefore {
