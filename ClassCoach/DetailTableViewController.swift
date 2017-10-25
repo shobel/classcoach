@@ -47,6 +47,12 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     @IBOutlet weak var cellGATE: UITableViewCell!
     @IBOutlet weak var cellELL: UITableViewCell!
     
+    var switchColor = DataHolder.sharedInstance.themeColor
+    var uneditableColor = DataHolder.sharedInstance.themeColor
+    var editableColorSwitch = UIColor(red: 83/255, green: 214/255, blue: 105/255, alpha: 1)
+    var editableColorSelector =  UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
+
+    
     //after clicking Done, editMode becomes false and all fields are locked
     public var editMode:Bool = true {
         didSet {
@@ -70,8 +76,8 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
         let tempImageView = UIImageView(image: UIImage(named: "yellow_gradient.jpg"))
         tempImageView.frame = self.tableView.frame
         self.tableView.backgroundView = tempImageView;
-        
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+
+        //        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
 //        view.addGestureRecognizer(tap)
 //        view.isUserInteractionEnabled = true
         
@@ -108,6 +114,7 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     
     override func viewDidAppear(_ animated: Bool) {
         setData()
+        adjustSwitchColor()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -152,17 +159,21 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        var headerModifier = ""
+        let headerView = view as! UITableViewHeaderFooterView
         if (editMode){
-            (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.white
-            (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.darkGray
+            headerView.backgroundView?.backgroundColor = UIColor.white
+            headerView.textLabel?.textColor = UIColor.darkGray
         } else {
-            (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.darkGray
-            (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.white
+            headerView.backgroundView?.backgroundColor = uneditableColor
+            headerView.textLabel?.textColor = UIColor.white
+            headerModifier = "    (locked)"
         }
+        headerView.textLabel?.text = (headerView.textLabel?.text)! + headerModifier
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 32
     }
     
     override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
@@ -191,9 +202,9 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        var selectorColor = DataHolder.sharedInstance.themeColor
+        var selectorColor = editableColorSelector
         if (!editMode) {
-            selectorColor = UIColor.darkGray
+            selectorColor = uneditableColor
             cell.accessoryType = UITableViewCellAccessoryType.none
         } else {
             if (cell == cellIEP) {
@@ -223,19 +234,30 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
 
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         setCellsEditable(editable: editMode)
+        adjustSwitchColor()
     }
     
     private func editModeChanged(){
         let button = self.navigationItem.rightBarButtonItem
         if editMode {
+            switchColor = editableColorSwitch
             button?.title = "Done"
-            //navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Helvetica", size: 18.0)!], for: UIControlState.normal)
         } else {
+            switchColor = uneditableColor
             button?.title = "Edit"
-            //navigationItem.rightBarButtonItem?.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Helvetica", size: 22.0)!], for: UIControlState.normal)
         }
+        adjustSwitchColor()
         setCellsEditable(editable: editMode)
         tableView.reloadData()
+    }
+    
+    private func adjustSwitchColor(){
+        switch504?.onTintColor = switchColor
+        switchGate?.onTintColor = switchColor
+        switchEll?.onTintColor = switchColor
+        switchHelpful?.onTintColor = switchColor
+        switchDifficult?.onTintColor = switchColor
+        switchDivorced?.onTintColor = switchColor
     }
     
     @IBAction func doneEditButtonAction(_ sender: AnyObject) {

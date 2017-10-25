@@ -451,10 +451,16 @@
          contextName = "DetailTableViewController.editModeChanged():DetailTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "cellIEP">
+               value = "UIColor.darkGray">
+            </PersistentString>
+            <PersistentString
+               value = "switchColor">
             </PersistentString>
             <PersistentString
                value = "UITableViewCellAccessoryType.none">
+            </PersistentString>
+            <PersistentString
+               value = "cellIEP">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
