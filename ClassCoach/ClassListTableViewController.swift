@@ -29,6 +29,8 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.isNavigationBarHidden = false
         self.clearsSelectionOnViewWillAppear = false
         evc = storyboard?.instantiateViewController(withIdentifier: "emojieVC") as! EmojieViewController
         evc.delegate = self
@@ -64,6 +66,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     }
     
     override func viewDidAppear(_ animated: Bool){
+        self.navigationController?.isNavigationBarHidden = false
         DataHolder.sharedInstance.classList.sort {
             if $0.nameLast != $1.nameLast {
                 return $0.nameLast < $1.nameLast
@@ -203,6 +206,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
             filter(list: classList)
         }
         self.navigationItem.leftBarButtonItem?.title = "Clear Filter"
+        self.navigationItem.leftBarButtonItem?.image = UIImage(named: "clearfilter.png")
         self.navigationItem.rightBarButtonItem?.isEnabled = false
         self.title = "Filtered List"
 //        for filterCategory in DataHolder.sharedInstance.filters {
@@ -215,7 +219,8 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     public func doNormalLayout(){
         classList = DataHolder.sharedInstance.classList
         tableView.reloadData()
-        self.navigationItem.leftBarButtonItem?.title = "Filter"
+        self.navigationItem.leftBarButtonItem?.title = "Filter Options"
+        self.navigationItem.leftBarButtonItem?.image = UIImage(named: "filter.png")
         self.navigationItem.rightBarButtonItem?.isEnabled = true
         self.title = "Class List"
     }
@@ -329,9 +334,10 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     }
     
     @IBAction func filterButtonAction(_ sender: AnyObject) {
-        if navigationItem.leftBarButtonItem?.title == "Filter" {
+        if navigationItem.leftBarButtonItem?.title == "Filter Options" {
             performSegue(withIdentifier: "showFilters", sender: self)
         } else {
+            //clear filter
             DataHolder.sharedInstance.filters.removeAll()
             classList = DataHolder.sharedInstance.classList
             hideShowDeleteAllButton()
@@ -383,7 +389,7 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
     }
     
     private func showPrivacyAlert(){
-        var message = "This app securely encrypts entered data and never shares or trasmits data to any external sources. However, it is still recommended that you do not use this app to save personally identifiable information in conjunction with sensitive data without proper approval"
+        var message = "This app securely encrypts entered data and never shares or trasmits data to any external sources. However, it is recommended that you do not save personally identifiable information and sensitive data without proper approval"
         if !(LAContext().canEvaluatePolicy(.deviceOwnerAuthentication, error: nil)) {
             message.append(", and that password protection is enabled for this device.")
         } else {
@@ -394,5 +400,37 @@ class ClassListTableViewController: UITableViewController, EmojieViewControllerD
             alertController.dismiss(animated: true, completion: nil)
         }))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func helpButton(_ sender: Any) {
+        let message = "\nThe add button on the top right creates a new student\n\nAfter adding a student, info on the detail screen becomes locked until you click the edit button\n\nYou can tap the emojie next to a student's name to change it\n\nThe funnel icon on the top left lets you filter the class list\n\nThe preferences button allows you to add authentication for increased security\n\n\u{2605} Please leave a review in the app store to give feedback \u{2605}\n\nThank you!"
+        let alertController = UIAlertController(title: "Help", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            alertController.dismiss(animated: true, completion: nil)
+        })
+        let rateAction = UIAlertAction(title: "Rate App", style: .default, handler: { (action: UIAlertAction!) in
+            self.rateApp(appId: "1298270460", completion: { success in
+                print("RateApp \(success)")
+            })
+        })
+        alertController.addAction(action)
+        alertController.addAction(rateAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
+        return CGRect(x: x, y: y, width: width, height: height)
+    }
+    
+    func rateApp(appId: String, completion: @escaping ((_ success: Bool)->())) {
+        guard let url = URL(string : "itms-apps://itunes.apple.com/us/app/class-coach/id" + appId) else {
+            completion(false)
+            return
+        }
+        guard #available(iOS 10, *) else {
+            completion(UIApplication.shared.openURL(url))
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: completion)
     }
 }

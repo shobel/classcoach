@@ -10,6 +10,9 @@
 		1C3729A81F9D226200685E1D /* Cryptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C3729A71F9D226100685E1D /* Cryptor.c */; };
 		1C3729AA1F9D366400685E1D /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3729A91F9D366400685E1D /* Private.swift */; };
 		1C3729AC1F9EADD700685E1D /* FilterSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3729AB1F9EADD700685E1D /* FilterSegmentedControl.swift */; };
+		1C3729AE1FA2BA2D00685E1D /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3729AD1FA2BA2D00685E1D /* SearchFooter.swift */; };
+		1C3729B01FAEE76D00685E1D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3729AF1FAEE76D00685E1D /* AuthViewController.swift */; };
+		1C3729B21FB046C400685E1D /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3729B11FB046C400685E1D /* PreferencesTableViewController.swift */; };
 		1C83304A1F5FB58900BD2648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8330491F5FB58900BD2648 /* AppDelegate.swift */; };
 		1C83304F1F5FB58900BD2648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C83304D1F5FB58900BD2648 /* Main.storyboard */; };
 		1C8330511F5FB58900BD2648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C8330501F5FB58900BD2648 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		1C3729A71F9D226100685E1D /* Cryptor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Cryptor.c; sourceTree = "<group>"; };
 		1C3729A91F9D366400685E1D /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 		1C3729AB1F9EADD700685E1D /* FilterSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSegmentedControl.swift; sourceTree = "<group>"; };
+		1C3729AD1FA2BA2D00685E1D /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		1C3729AF1FAEE76D00685E1D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1C3729B11FB046C400685E1D /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		1C8330461F5FB58900BD2648 /* ClassCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8330491F5FB58900BD2648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C83304E1F5FB58900BD2648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,6 +169,8 @@
 				1C83307C1F5FEA2800BD2648 /* FilterTableViewController.swift */,
 				1C83307E1F60E22B00BD2648 /* DetailTableViewController.swift */,
 				1CD0F4D01F73473000ACFECB /* EmojieViewController.swift */,
+				1C3729AF1FAEE76D00685E1D /* AuthViewController.swift */,
+				1C3729B11FB046C400685E1D /* PreferencesTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				1CD0F4C21F65CC4B00ACFECB /* ClassListTableViewCell.swift */,
+				1C3729AD1FA2BA2D00685E1D /* SearchFooter.swift */,
 				1C3729AB1F9EADD700685E1D /* FilterSegmentedControl.swift */,
 				1CD0F4CA1F73013900ACFECB /* PopupCollectionViewCell.swift */,
 			);
@@ -334,12 +343,15 @@
 			files = (
 				1C83307F1F60E22B00BD2648 /* DetailTableViewController.swift in Sources */,
 				1CD0F4D11F73473000ACFECB /* EmojieViewController.swift in Sources */,
+				1C3729AE1FA2BA2D00685E1D /* SearchFooter.swift in Sources */,
 				1C3729A81F9D226200685E1D /* Cryptor.c in Sources */,
+				1C3729B21FB046C400685E1D /* PreferencesTableViewController.swift in Sources */,
 				1C83307B1F5FE02F00BD2648 /* ClassListTableViewController.swift in Sources */,
 				1CD0F4D31F8ABD0600ACFECB /* IEPTableViewController.swift in Sources */,
 				1CD0F4CB1F73013900ACFECB /* PopupCollectionViewCell.swift in Sources */,
 				1C960C0A1F9D19250047E738 /* RNCryptor.swift in Sources */,
 				1C83304A1F5FB58900BD2648 /* AppDelegate.swift in Sources */,
+				1C3729B01FAEE76D00685E1D /* AuthViewController.swift in Sources */,
 				1CD0F4DB1F8C5C5E00ACFECB /* DataHolder.swift in Sources */,
 				1C3729AA1F9D366400685E1D /* Private.swift in Sources */,
 				1CD0F4731F61203900ACFECB /* Student.swift in Sources */,

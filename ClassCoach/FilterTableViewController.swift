@@ -24,6 +24,7 @@ class FilterTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
         DataHolder.sharedInstance.filterMode = 0
     }
 

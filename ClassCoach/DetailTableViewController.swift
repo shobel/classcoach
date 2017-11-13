@@ -113,6 +113,7 @@ class DetailTableViewController: UITableViewController, UITextViewDelegate, UITe
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
         setData()
         adjustSwitchColor()
     }

@@ -67,7 +67,7 @@ public class Student : NSObject, NSCoding {
         levelReading = levels.medium
         levelMath = levels.medium
         levelWriting = levels.medium
-        levelRW = "A"
+        levelRW = ""
         
         behavior = levels.medium
         independence = levels.medium

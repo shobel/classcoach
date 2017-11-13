@@ -33,6 +33,23 @@ class DataHolder {
             saveData()
         }
     }
+    
+    public var authOnStart : Bool! {
+        didSet{
+            print("authonstart set to " + authOnStart.description)
+            UserDefaults.standard.set(authOnStart, forKey: "authOnStart")
+            print("confirming authonstart is set to " + UserDefaults.standard.bool(forKey: "authOnStart").description)
+        }
+    }
+    
+    public var authOnActive : Bool! {
+        didSet{
+            print("authonactive set to " + authOnActive.description)
+            UserDefaults.standard.set(authOnActive, forKey: "authOnActive")
+            print("confirming authonactive is set to " + UserDefaults.standard.bool(forKey: "authOnActive").description)
+        }
+    }
+    
     public var filters = [FilterCategories:Bool]()
     public var filterMode = 0 //OR 1 - AND
     public var themeColor = UIColor(red: 39/255, green: 121/255, blue: 138/255, alpha: 1)
@@ -43,6 +60,8 @@ class DataHolder {
         } catch {
             print("Error: \(error)")
         }
+        //UserDefaults.standard.removeObject(forKey: "authOnStart")
+        //UserDefaults.standard.removeObject(forKey: "authOnActive")
         loadData()
         //UserDefaults.standard.removeObject(forKey: "classlist")
 //        if let classListRaw = UserDefaults.standard.data(forKey: "classlist") {
@@ -60,6 +79,11 @@ class DataHolder {
     }
     
     public func loadData(){
+        //load prefs
+        print("loading authonstart is " + UserDefaults.standard.bool(forKey: "authOnStart").description)
+        print("loading authonactive is " + UserDefaults.standard.bool(forKey: "authOnActive").description)
+        authOnStart = UserDefaults.standard.bool(forKey: "authOnStart")
+        authOnActive = UserDefaults.standard.bool(forKey: "authOnActive")
         //if there is data saved in old plain text format, load it and then encrypt it
         //Otherwise, try to load the encrypted data
         if let classData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Student] {

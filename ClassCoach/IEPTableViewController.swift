@@ -29,6 +29,10 @@ class IEPTableViewController: UITableViewController {
         setData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     private func setData(){
         if (student != nil){
             readingSwitch.isOn = student.iepReading

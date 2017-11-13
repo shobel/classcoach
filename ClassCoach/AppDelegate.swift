@@ -23,9 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        //let mySpecialBlue = UIColor(red: 73/255, green: 157/255, blue: 178/255, alpha: 1)
         let mySpecialBlue = UIColor(red: 39/255, green: 121/255, blue: 138/255, alpha: 1)
-        //let mySpecialBlueDarker = UIColor(red: 66/255, green: 153/255, blue: 175/255, alpha: 1)
+        let mySpecialBlue2 = UIColor(red: 40/255, green: 117/255, blue: 137/255, alpha: 1)
         UINavigationBar.appearance().barTintColor = mySpecialBlue
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
@@ -36,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().clipsToBounds = true
         
-        UISearchBar.appearance().barTintColor = mySpecialBlue
+        UISearchBar.appearance().barTintColor = mySpecialBlue2
         UISearchBar.appearance().tintColor = .white
         
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = mySpecialBlue
@@ -62,7 +61,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
+        
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        if (UserDefaults.standard.bool(forKey: "authOnActive")){
+            if let authController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthVC") as? AuthViewController {
+                if let window = self.window, let rootViewController = window.rootViewController as? UINavigationController {
+                    let numVCs = rootViewController.viewControllers.count
+                    if (rootViewController.viewControllers[numVCs-1].restorationIdentifier != "AuthVC"){
+                        rootViewController.pushViewController(authController, animated: true)
+                    }
+                }
+            }
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
